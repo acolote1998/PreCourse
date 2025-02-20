@@ -3,7 +3,7 @@ package chapter2.exercise;
 import java.util.Scanner;
 
 public class SentenceGenerator {
-    public static void main(String arg[]){
+    public static void main(String args[]){
 
 
         //Taks:

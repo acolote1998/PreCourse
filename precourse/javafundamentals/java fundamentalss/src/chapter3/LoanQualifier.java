@@ -3,7 +3,7 @@ package chapter3;
 import java.util.Scanner;
 
 public class LoanQualifier {
-    public static void main(String arg[]){
+    public static void main(String args[]){
         // To qualify for a loan, a person must take at least
         // 30 000 and have been working at their current job
         // for at least 2 years.
