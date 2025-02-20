@@ -13,6 +13,7 @@ public class ChangeForAPeso {
 
         int oneCent, fiveCents, twentyFiveCents, fiftyCents;
         int goal = 100;
+        int sum;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("We have to collect enough coins to reach one peso.");
@@ -21,13 +22,21 @@ public class ChangeForAPeso {
         oneCent = scanner.nextInt();
 
         System.out.println("Please enter how many 5 cent coins you own:");
-        fiveCents = scanner.nextInt();
+        fiveCents = scanner.nextInt()*5;
 
         System.out.println("Please enter how many 25 cent coins you own:");
-        twentyFiveCents = scanner.nextInt();
+        twentyFiveCents = scanner.nextInt()*25;
 
         System.out.println("Please enter how many 50 cent coins you own:");
-        fiftyCents = scanner.nextInt();
+        fiftyCents = scanner.nextInt()*50;
+
+        sum = oneCent+fiveCents+twentyFiveCents+fiftyCents;
+
+        if (sum==goal){
+            System.out.println("Congratulations! You have summed up to exactly 1 peso!");
+        }else if (sum>goal){
+            System.out.println("Sadly for the game, luckily for you, you went "+(sum-goal)+" cent/s too much!");
+        }else System.out.println("Oh no, you are missing "+(goal-sum)+" cent/s!");
 
     }
 }
