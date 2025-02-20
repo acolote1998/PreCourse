@@ -24,11 +24,9 @@ describe("greet function", () => {
     assert.equal("Welcome to SALT, Eliza", actualResult);
   });
   it("should error message for ''", () => {
-    // act => where we write the test. For simplicity, only one thing per test
+    // assert. check if what we want, is what we got as result from the greet function
     assert.throws(() => {
       greeter.greet("");
     }, /Name cannot be empty/);
-
-    // assert. check if what we want, is what we got as result from the greet function
   });
 });
