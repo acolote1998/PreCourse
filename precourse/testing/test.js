@@ -1,11 +1,12 @@
 const assert = require('assert');
 
 describe ('greet function', ()=> {
+    // arrange  => makes sure that what we will test is going to be available and ready in the code
+    const greeter = require('./index.js');
+
     it ('should greet Marcus properly', () => {
 
-    // arrange  => makes sure that what we will test is going to be available and ready in the code
 
-    const greeter = require('./index.js');
 
     // act => where we write the test. For simplicity, only one thing per test
 
