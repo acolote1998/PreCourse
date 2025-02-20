@@ -21,5 +21,8 @@ public class SentenceGenerator {
         System.out.println("Thank you.");
         System.out.println("Please write an integer.");
         int number = scanner.nextInt();
+        System.out.println("Thank you.");
+        System.out.println("As a last thing, would you please write and adjective for me?.");
+        String adjective = scanner.next();
     }
 }
