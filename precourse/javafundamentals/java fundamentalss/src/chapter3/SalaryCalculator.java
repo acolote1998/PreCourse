@@ -17,11 +17,17 @@ public class SalaryCalculator {
         int howManySales = scanner.nextInt();
         scanner.close();
 
+        System.out.println("Thank you. Calculating your salary.");
+
         if (howManySales>=10){
             baseSalary=baseSalary+bonus;
+            System.out.println("Congratulations! Due to your performance, you have unlocked an extra bonus of "+bonus+" SEK.");
+        }
+        else {
+            System.out.println("Sadly, you did not make enough sales for unlocking your bonus. You were "+(10-howManySales)+" sale/s away.");
         }
 
-        System.out.println("Thank you. Calculating your salary.");
+
         System.out.println("Based on your sales, your expected salary is "+baseSalary+ " SEK.");
 
     }
