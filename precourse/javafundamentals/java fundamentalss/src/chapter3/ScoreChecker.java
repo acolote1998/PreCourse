@@ -9,5 +9,10 @@ public class ScoreChecker {
         char grade;
         int score;
 
+        System.out.println("Please enter your score and we will calculate your grade accordingly.");
+        score = scanner.nextInt();
+
+
+
     }
 }
