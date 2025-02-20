@@ -30,6 +30,8 @@ public class ChangeForAPeso {
         System.out.println("Please enter how many 50 cent coins you own:");
         fiftyCents = scanner.nextInt()*50;
 
+        scanner.close();
+
         sum = oneCent+fiveCents+twentyFiveCents+fiftyCents;
 
         if (sum==goal){
