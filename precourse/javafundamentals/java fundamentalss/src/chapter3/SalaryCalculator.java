@@ -14,5 +14,11 @@ public class SalaryCalculator {
         System.out.println("Please write how many sales you have performed last week.");
         int howManySales = scanner.nextInt();
 
+        if (howManySales>=10){
+            baseSalary=baseSalary+bonus;
+        }
+
+
+
     }
 }
