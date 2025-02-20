@@ -29,6 +29,8 @@ public class SentenceGenerator {
         System.out.println("As a last thing, would you please write and adjective for me?.");
         String adjective = scanner.next();
 
+        scanner.close();
+
         System.out.println("I appreciate it.");
 
         System.out.println("It seems that on a "+adjective+" "+season+" day, I drink a minimum of "+number+" cups of coffee.");
