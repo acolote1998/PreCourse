@@ -6,8 +6,6 @@ describe ('greet function', ()=> {
 
     it ('should greet Marcus properly', () => {
 
-
-
     // act => where we write the test. For simplicity, only one thing per test
 
     const actualResult = greeter.greet('Marcus');
@@ -17,4 +15,16 @@ describe ('greet function', ()=> {
     assert.equal('Welcome to SALT, Marcus', actualResult);
 
     });
+
+    it ('should greet Eliza properly', () => {
+
+        // act => where we write the test. For simplicity, only one thing per test
+    
+        const actualResult = greeter.greet('Eliza');
+    
+        // assert. check if what we want, is what we got as result from the greet function
+    
+        assert.equal('Welcome to SALT, Eliza', actualResult);
+    
+        });
 });
