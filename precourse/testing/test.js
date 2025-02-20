@@ -29,4 +29,13 @@ describe("greet function", () => {
       greeter.greet("");
     }, /Name cannot be empty/);
   });
+  it("should plural greeting for 'Eliza and Marcus'", () => {
+    // act => where we write the test. For simplicity, only one thing per test
+
+    const actualResult = greeter.greet("Eliza and Marcus");
+
+    // assert. check if what we want, is what we got as result from the greet function
+
+    assert.equal("Welcome to SALT, Eliza and Marcus", actualResult);
+  });
 });
