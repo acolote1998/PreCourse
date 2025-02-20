@@ -7,6 +7,8 @@ public class SalaryCalculator {
 //If
 // All salespeople get a payment of $1000 a week
 // Salespeople who exceed 10 sales get an additional bonus of 250
+// The people who reached it, gets a congratulatory message, those who did not
+// they are informed how many sales were missing
         int baseSalary = 10000;
         int bonus = 250;
         Scanner scanner = new Scanner(System.in);
