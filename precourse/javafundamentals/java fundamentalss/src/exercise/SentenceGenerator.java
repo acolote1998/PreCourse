@@ -1,5 +1,7 @@
 package exercise;
 
+import java.util.Scanner;
+
 public class SentenceGenerator {
     public static void main(String arg[]){
 
@@ -11,5 +13,7 @@ public class SentenceGenerator {
 
         //"On a [adjective] [season of the year] day, I drink a minimum
         // of [wholle number] cups of coffee."
+
+        Scanner scanner = new Scanner(System.in);
     }
 }
