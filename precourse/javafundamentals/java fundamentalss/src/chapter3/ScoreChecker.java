@@ -39,6 +39,9 @@ public class ScoreChecker {
             case 'D':
                 message="Sadly, this is a no pass. Better effort for the upcoming tests please.";
                 break;
+            default:
+                message="Error in your grade. Please check again.";
+                break;
         }
 
         System.out.println(message);
