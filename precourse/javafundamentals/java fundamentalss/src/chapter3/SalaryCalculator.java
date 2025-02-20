@@ -11,5 +11,8 @@ public class SalaryCalculator {
         int bonus = 250;
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Please write how many sales you have performed last week.");
+        int howManySales = scanner.nextInt();
+
     }
 }
