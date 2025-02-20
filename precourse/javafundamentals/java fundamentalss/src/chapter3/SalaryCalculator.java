@@ -18,7 +18,8 @@ public class SalaryCalculator {
             baseSalary=baseSalary+bonus;
         }
 
-
+        System.out.println("Thank you. Calculating your salary.");
+        System.out.println("Based on your sales, your expected salary is "+baseSalary+ " SEK.");
 
     }
 }
