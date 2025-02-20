@@ -1,5 +1,7 @@
 package chapter3;
 
+import java.util.Scanner;
+
 public class ChangeForAPeso {
     private static void main(String args[]){
         //The objective of the game is to enter enough change
@@ -11,6 +13,8 @@ public class ChangeForAPeso {
 
         int oneCent, fiveCents, twentyFiveCents, fiftyCents;
         int goal = 100;
+        Scanner scanner = new Scanner(System.in);
+
 
     }
 }
