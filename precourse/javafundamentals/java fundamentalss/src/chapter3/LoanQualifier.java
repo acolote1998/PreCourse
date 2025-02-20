@@ -15,5 +15,8 @@ public class LoanQualifier {
         System.out.println("Please write your salary:");
         int usersSalary = scanner.nextInt();
 
+        System.out.println("For how many months have you been working at the company?");
+        int usersWorkedMonths = scanner.nextInt();
+
     }
 }
