@@ -10,5 +10,8 @@ public class forLoopExercise {
         Scanner scanner = new Scanner(System.in);
         int quantity;
         double totalPrice, itemPrice;
+
+        System.out.println("Please introduce the number of items you will scan");
+        quantity = scanner.nextInt();
     }
 }
