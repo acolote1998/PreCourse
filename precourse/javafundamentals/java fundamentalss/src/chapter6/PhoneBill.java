@@ -1,5 +1,7 @@
 package chapter6;
 
+import java.util.List;
+
 public class PhoneBill {
     //Phone bill exercise
     //A phone bill should have an id, base cost, number of alloted minutes
@@ -16,7 +18,7 @@ public class PhoneBill {
     int price;
     int tax;
 
-    PhoneBill(int id, int allotedMinutes, int usedMinutes) {
+    public PhoneBill(int id, int allotedMinutes, int usedMinutes) {
         this.id = id;
         this.allotedMinutes = allotedMinutes;
         this.usedMinutes = usedMinutes;
@@ -24,7 +26,7 @@ public class PhoneBill {
         tax = 10;
     }
 
-    PhoneBill(int id) {
+    public PhoneBill(int id) {
         this.id = id;
         allotedMinutes = 0;
         usedMinutes = 0;
@@ -32,12 +34,16 @@ public class PhoneBill {
         tax = 10;
     }
 
-    PhoneBill() {
+    public PhoneBill() {
         id = 0;
         allotedMinutes = 0;
         usedMinutes = 0;
         price = 50;
         tax = 10;
+    }
+
+    public String printBill() {
+        return "Dear Customer, ID" + id + " , you have used " + usedMinutes + " out of your total " + allotedMinutes + ". The price of the bill is " + (price + tax);
     }
 
 
