@@ -9,13 +9,18 @@ public class forLoopExercise {
 
         Scanner scanner = new Scanner(System.in);
         int quantity;
-        double totalPrice, itemPrice;
+        double totalPrice=0;
+        double itemPrice=0;
 
         System.out.println("Please introduce the number of items you will scan");
         quantity = scanner.nextInt();
 
         for (int i=0;i<quantity;i++){
-
+        System.out.println("Please introduce the price of the item number"+(i+1));
+        itemPrice=scanner.nextDouble();
+        totalPrice=totalPrice+itemPrice;
         }
+
+
     }
 }
