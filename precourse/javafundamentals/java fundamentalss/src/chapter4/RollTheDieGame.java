@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class RollTheDieGame {
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         //The objective of this game is to travel the entire game board of 20 spaces within 5 die rolls
         // - Roll the die for the user (generate random between 1 and 6) and advance the user
@@ -21,29 +21,29 @@ public class RollTheDieGame {
         // Remember there are only 20 spaces on the board, so a message like 'You advanced to space 22' is a bug
 
         int timesToRoll = 5;
-        int userSlot=0;
+        int userSlot = 0;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("You are now in the cell "+userSlot);
+        System.out.println("You are now in the cell " + userSlot);
 
         System.out.println("We will roll the dice for you");
 
-        for(int i=0;i<timesToRoll;i++){
+        for (int i = 0; i < timesToRoll; i++) {
             Random randomNumber = new Random();
-            int rolledNumber = randomNumber.nextInt(6)+1;
-            System.out.println("Your die number "+(i+1)+" rolled a "+rolledNumber);
-            userSlot= userSlot+rolledNumber;
+            int rolledNumber = randomNumber.nextInt(6) + 1;
+            System.out.println("Your die number " + (i + 1) + " rolled a " + rolledNumber);
+            userSlot = userSlot + rolledNumber;
 
-            if(userSlot<20){
-                System.out.println("You are now in the cell "+userSlot);
-                System.out.println("You need to advance "+(20-userSlot)+" more cells.");
+            if (userSlot < 20) {
+                System.out.println("You are now in the cell " + userSlot);
+                System.out.println("You need to advance " + (20 - userSlot) + " more cells.");
             }
-            if(userSlot==20){
-                System.out.println("You are now in the cell "+userSlot);
+            if (userSlot == 20) {
+                System.out.println("You are now in the cell " + userSlot);
                 System.out.println("Congratulations, you have won");
                 break;
-            }else if ((i==4 && userSlot<20) || (userSlot>20)){
-                System.out.println("Sadly, you did not finish on the cell 20. Your end cell was "+userSlot+". You lost");
+            } else if ((i == 4 && userSlot < 20) || (userSlot > 20)) {
+                System.out.println("Sadly, you did not finish on the cell 20. Your end cell was " + userSlot + ". You lost");
             }
         }
 
