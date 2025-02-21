@@ -12,14 +12,18 @@ public class SumNumbersUntilISay {
 
         Scanner scanner = new Scanner(System.in);
         int numberOne, numberTwo;
-        boolean repeat;
-
-        System.out.println("Please write your first number");
-        numberOne = scanner.nextInt();
-
-        System.out.println("Please write your second number");
-        numberTwo = scanner.nextInt();
+        boolean repeat=true;
 
 
+
+        do{
+
+            System.out.println("Please write your first number");
+            numberOne = scanner.nextInt();
+
+            System.out.println("Please write your second number");
+            numberTwo = scanner.nextInt();
+            
+        }while (repeat);
     }
 }
