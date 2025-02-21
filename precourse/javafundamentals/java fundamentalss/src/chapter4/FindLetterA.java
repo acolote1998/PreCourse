@@ -10,5 +10,9 @@ public class FindLetterA {
         String text = "";
         Scanner scanner = new Scanner(System.in);
 
+        for (int i=0;i<text.length();i++){
+
+        }
+
     }
 }
