@@ -1,5 +1,7 @@
 package chapter4;
 
+import java.util.Scanner;
+
 public class RollTheDieGame {
     public static void main(String args[]){
 
@@ -19,7 +21,7 @@ public class RollTheDieGame {
 
         int timesToRoll = 5;
         int userSlot=0;
-
+        Scanner scanner = new Scanner(System.in);
 
     }
 }
