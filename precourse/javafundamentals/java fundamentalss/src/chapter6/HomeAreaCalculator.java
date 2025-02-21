@@ -10,7 +10,11 @@ public class HomeAreaCalculator {
 
         Rectangle roomTwo = new Rectangle(30, 5);
 
-        
+        double totalArea;
+
+        totalArea = roomOne.calculateArea() + roomTwo.calculateArea();
+
+        System.out.println("The total area of both rooms is " + totalArea);
     }
 
 
