@@ -10,6 +10,9 @@ public class FindLetterA {
         String text = "";
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Please write down a text and lets find out if it contains the letter A");
+        text=scanner.next();
+
         for (int i=0;i<text.length();i++){
         char currentLetter = text.charAt(i);
             if (currentLetter =='A' || currentLetter=='a'){
@@ -17,6 +20,10 @@ public class FindLetterA {
              break;
             }
         }
+
+        if (letterFound){
+            System.out.println("The text contains the letter 'A' at some point");
+        }else System.out.println("The text does not contain the letter 'A'");
 
     }
 }
