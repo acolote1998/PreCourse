@@ -6,6 +6,11 @@ package chapter6;
 public class HomeAreaCalculator {
     public static void main(String args[]) {
 
+        Rectangle roomOne = new Rectangle(10, 20);
+
+        Rectangle roomTwo = new Rectangle(30, 5);
+
+        
     }
 
 
