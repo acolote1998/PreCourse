@@ -11,7 +11,7 @@ public class FindLetterA {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Please write down a text and lets find out if it contains the letter A");
-        text=scanner.next();
+        text=scanner.nextLine();
 
         for (int i=0;i<text.length();i++){
         char currentLetter = text.charAt(i);
