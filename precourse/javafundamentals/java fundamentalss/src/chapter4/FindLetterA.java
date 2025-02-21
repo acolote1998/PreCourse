@@ -11,7 +11,11 @@ public class FindLetterA {
         Scanner scanner = new Scanner(System.in);
 
         for (int i=0;i<text.length();i++){
-
+        char currentLetter = text.charAt(i);
+            if (currentLetter =='A' || currentLetter=='a'){
+             letterFound=true;
+             break;
+            }
         }
 
     }
