@@ -23,5 +23,9 @@ public class RollTheDieGame {
         int userSlot=0;
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("We will roll the dice for you");
+
+
+
     }
 }
