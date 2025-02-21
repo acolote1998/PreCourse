@@ -13,22 +13,32 @@ public class PhoneBill {
     int id;
     int allotedMinutes;
     int usedMinutes;
+    int price;
+    int tax;
 
     PhoneBill(int id, int allotedMinutes, int usedMinutes) {
         this.id = id;
         this.allotedMinutes = allotedMinutes;
         this.usedMinutes = usedMinutes;
+        price = 50;
+        tax = 10;
     }
 
     PhoneBill(int id) {
         this.id = id;
         allotedMinutes = 0;
         usedMinutes = 0;
+        price = 50;
+        tax = 10;
     }
 
     PhoneBill() {
         id = 0;
         allotedMinutes = 0;
         usedMinutes = 0;
+        price = 50;
+        tax = 10;
     }
+
+
 }
