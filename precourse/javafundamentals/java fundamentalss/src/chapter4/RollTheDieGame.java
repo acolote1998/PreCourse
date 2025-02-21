@@ -24,12 +24,27 @@ public class RollTheDieGame {
         int userSlot=0;
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("You are now in the cell "+userSlot);
+
         System.out.println("We will roll the dice for you");
 
         for(int i=0;i<timesToRoll;i++){
             Random randomNumber = new Random();
             int rolledNumber = randomNumber.nextInt(6)+1;
             System.out.println("Your die number "+(i+1)+" rolled a "+rolledNumber);
+            userSlot= userSlot+rolledNumber;
+
+            if(userSlot<20){
+                System.out.println("You are now in the cell "+userSlot);
+                System.out.println("You need to advance "+(20-userSlot)+" more cells.");
+            }
+            if(userSlot==20){
+                System.out.println("You are now in the cell "+userSlot);
+                System.out.println("Congratulations, you have won");
+                break;
+            }else if ((i==4 && userSlot<20) || (userSlot>20)){
+                System.out.println("Sadly, you did not finish on the cell 20. Your end cell was "+userSlot+". You lost");
+            }
         }
 
     }
