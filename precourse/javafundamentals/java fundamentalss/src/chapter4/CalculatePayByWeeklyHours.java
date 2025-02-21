@@ -17,5 +17,13 @@ public class CalculatePayByWeeklyHours {
 
         System.out.println("Please introduce the amount of hours the employee has worked");
         hoursWorked=scanner.nextInt();
+
+        while(hoursWorked>maxHours){
+            System.out.println("We do not allow overtime in this company, please enter a maximum hours of "+maxHours);
+            System.out.println("Introduce the amount of hours again");
+            hoursWorked = scanner.nextInt();
+        }
+
+        System.out.println("The calculated pay is "+(hourlyWage*hoursWorked)+" SEK");
     }
 }
