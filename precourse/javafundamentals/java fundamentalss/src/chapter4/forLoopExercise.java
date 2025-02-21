@@ -13,5 +13,9 @@ public class forLoopExercise {
 
         System.out.println("Please introduce the number of items you will scan");
         quantity = scanner.nextInt();
+
+        for (int i=0;i<quantity;i++){
+
+        }
     }
 }
