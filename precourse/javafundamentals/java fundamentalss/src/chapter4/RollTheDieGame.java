@@ -1,5 +1,6 @@
 package chapter4;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class RollTheDieGame {
@@ -25,7 +26,11 @@ public class RollTheDieGame {
 
         System.out.println("We will roll the dice for you");
 
-
+        for(int i=0;i<timesToRoll;i++){
+            Random randomNumber = new Random();
+            int rolledNumber = randomNumber.nextInt(6)+1;
+            System.out.println("Your die number "+(i+1)+" rolled a "+rolledNumber);
+        }
 
     }
 }
