@@ -23,7 +23,12 @@ public class SumNumbersUntilISay {
 
             System.out.println("Please write your second number");
             numberTwo = scanner.nextInt();
-            
+
+            System.out.println("The sum of bot numbers is "+(numberOne+numberTwo));
+            System.out.println("Would you like to sum more numbers? true for yes, and false for no");
+
+            repeat = scanner.nextBoolean();
+
         }while (repeat);
     }
 }
