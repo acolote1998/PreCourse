@@ -12,11 +12,11 @@ public class PhoneBill {
     // constructor is used, all fields should be set.
     // Create a class that instantiates a phone bill and prints the itemized bill
 
-    int id;
-    int allotedMinutes;
-    int usedMinutes;
-    int price;
-    int tax;
+    private int id;
+    private int allotedMinutes;
+    private int usedMinutes;
+    private int price;
+    private int tax;
 
     public PhoneBill(int id, int allotedMinutes, int usedMinutes) {
         this.id = id;
