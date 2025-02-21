@@ -17,5 +17,9 @@ public class RollTheDieGame {
 
         // Remember there are only 20 spaces on the board, so a message like 'You advanced to space 22' is a bug
 
+        int timesToRoll = 5;
+        int userSlot=0;
+
+
     }
 }
