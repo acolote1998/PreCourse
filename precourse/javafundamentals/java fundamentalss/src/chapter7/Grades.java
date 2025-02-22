@@ -1,5 +1,6 @@
 package chapter7;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -19,6 +20,11 @@ public class Grades {
         getGrades();
 
         System.out.println("Average: " + String.format("%.2f", calculateAverage()));
+
+        System.out.println("Highest:" + getHighest());
+
+        System.out.println("Lowest:" + getLowest());
+
     }
 
     public static void getGrades() {
@@ -38,5 +44,27 @@ public class Grades {
 
     public static double calculateAverage() {
         return calculateSum() / grades.length;
+    }
+
+    public static int getHighest() {
+        int highest = grades[0];
+        for (int grade : grades) {
+            if (grade > highest) {
+                highest = grade;
+            }
+
+        }
+        return highest;
+    }
+
+    public static int getLowest() {
+        int lowest = grades[0];
+        for (int grade : grades) {
+            if (grade < lowest) {
+                lowest = grade;
+            }
+
+        }
+        return lowest;
     }
 }
