@@ -19,12 +19,17 @@ public class DaysOfTheWeek {
 
     private static Scanner scanner = new Scanner(System.in);
 
+    private static int numberToConvert;
+
     public static void main(String args[]) {
         initialiseArray(days);
 
-        System.out.println("Please write a number from 1 to 7 and we will assign a day to you");
+        do {
+            System.out.println("Please write a number from 1 to 7 and we will assign a day to you");
 
-        int numberToConvert = scanner.nextInt();
+            numberToConvert = scanner.nextInt();
+        }
+        while (numberToConvert < 1 || numberToConvert > 7);
 
         System.out.println("The day of the week for your number is " + returnDayString(numberToConvert));
     }
