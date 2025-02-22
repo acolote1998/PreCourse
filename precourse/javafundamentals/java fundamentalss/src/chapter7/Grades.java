@@ -17,6 +17,8 @@ public class Grades {
         System.out.println("How many grades would you like to enter?");
         grades = new int[scanner.nextInt()];
         getGrades();
+
+        System.out.println("Average: " + String.format("%.2f", calculateAverage()));
     }
 
     public static void getGrades() {
