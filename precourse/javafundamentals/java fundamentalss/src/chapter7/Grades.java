@@ -16,5 +16,13 @@ public class Grades {
 
         System.out.println("How many grades would you like to enter?");
         grades = new int[scanner.nextInt()];
+        getGrades();
+    }
+
+    public static void getGrades() {
+        for (int i = 0; i < grades.length; i++) {
+            System.out.println("Entre grade #" + (i + 1));
+            grades[i] = scanner.nextInt();
+        }
     }
 }
