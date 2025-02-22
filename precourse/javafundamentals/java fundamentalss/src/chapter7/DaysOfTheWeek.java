@@ -21,6 +21,8 @@ public class DaysOfTheWeek {
 
     public static void main(String args[]) {
         initialiseArray(days);
+
+        System.out.println("Please write a number from 1 to 7 and we will assign a day to you");
     }
 
     public static void initialiseArray(String[] array) {
