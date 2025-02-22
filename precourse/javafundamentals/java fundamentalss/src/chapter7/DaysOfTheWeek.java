@@ -12,4 +12,10 @@ Example: User inputs the number 1, your program should print "Monday"
  */
 
 public class DaysOfTheWeek {
+
+    String days[] = new String[7];
+
+    public static void main(String args[]) {
+
+    }
 }
