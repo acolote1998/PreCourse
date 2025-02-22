@@ -16,9 +16,21 @@ import java.util.Scanner;
 public class DaysOfTheWeek {
 
     private static String days[] = new String[7];
+
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String args[]) {
-
+        initialiseArray(days);
     }
+
+    public static void initialiseArray(String[] array) {
+        array[0] = "Monday";
+        array[1] = "Tuesday";
+        array[2] = "Wednesday";
+        array[3] = "Thursday";
+        array[4] = "Friday";
+        array[5] = "Saturday";
+        array[6] = "Sunday";
+    }
+
 }
