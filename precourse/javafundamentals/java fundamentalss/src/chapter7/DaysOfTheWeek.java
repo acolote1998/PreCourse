@@ -23,6 +23,10 @@ public class DaysOfTheWeek {
         initialiseArray(days);
 
         System.out.println("Please write a number from 1 to 7 and we will assign a day to you");
+
+        int numberToConvert = scanner.nextInt();
+
+        System.out.println("The day of the week for your number is " + returnDayString(numberToConvert));
     }
 
     public static void initialiseArray(String[] array) {
