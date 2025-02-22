@@ -25,4 +25,12 @@ public class Grades {
             grades[i] = scanner.nextInt();
         }
     }
+
+    public static int calculateSum() {
+        int sum = 0;
+        for (int grade : grades) {
+            sum = sum + grade;
+        }
+        return sum;
+    }
 }
