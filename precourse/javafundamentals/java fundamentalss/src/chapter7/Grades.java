@@ -33,4 +33,8 @@ public class Grades {
         }
         return sum;
     }
+
+    public static double calculateAverage() {
+        return calculateSum() / grades.length;
+    }
 }
