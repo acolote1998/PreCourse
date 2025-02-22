@@ -35,4 +35,8 @@ public class DaysOfTheWeek {
         array[6] = "Sunday";
     }
 
+    public static String returnDayString(int number) {
+        return days[(number - 1)];
+    }
+
 }
