@@ -11,9 +11,12 @@ Your program should output the String that represents the day of the week
 Example: User inputs the number 1, your program should print "Monday"
  */
 
+import java.util.Scanner;
+
 public class DaysOfTheWeek {
 
-    String days[] = new String[7];
+    private static String days[] = new String[7];
+    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String args[]) {
 
