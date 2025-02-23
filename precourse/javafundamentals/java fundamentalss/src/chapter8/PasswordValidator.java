@@ -46,7 +46,7 @@ public class PasswordValidator {
         for (int i = 0; i < passArray.length; i++) {
             if (String.valueOf(passArray[i]).equals(String.valueOf(passArray[i]).toUpperCase())) {
                 containsUppercase = true;
-            } else containsUppercase = false;
+            }
         }
         return containsUppercase;
     }
@@ -58,7 +58,7 @@ public class PasswordValidator {
         for (int i = 0; i < passArray.length; i++) {
             if (String.valueOf(passArray[i]).equals(String.valueOf(passArray[i]).toLowerCase())) {
                 containsLowercase = true;
-            } else containsLowercase = false;
+            }
         }
         return containsLowercase;
     }
