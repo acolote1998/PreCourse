@@ -18,6 +18,7 @@ public class SpaceToString {
     }
 
     public static String jumbledToSpaced(String string) {
+        char[] jumbledCharacters = string.toCharArray();
         return null;
     }
 }
