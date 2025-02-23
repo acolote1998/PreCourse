@@ -3,7 +3,7 @@ package chapter8;
 import java.util.Scanner;
 
 public class wordBackwards {
-    private static void main(String args[]) {
+    public static void main(String args[]) {
         /*
         Write a method that prints a given
         String backwards. For example,
@@ -11,13 +11,16 @@ public class wordBackwards {
          */
 
         Scanner scanner = new Scanner(System.in);
-        String givenWord;
+        String givenWord = scanner.nextLine();
+        System.out.println(printBackwards(givenWord));
 
 
     }
 
     private static String printBackwards(String string) {
         char[] charArray = string.toCharArray();
+
+        char[] charBackwardsArray = new char[charArray.length];
         
         String wordBackwards = "";
 
