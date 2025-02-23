@@ -21,5 +21,4 @@ public class Employee extends Person {
         this.title = title;
     }
 
-
 }
