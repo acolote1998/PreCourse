@@ -15,11 +15,15 @@ public class SpaceToString {
         System.out.println("Please write a Jumbled phrase");
         String jumbledPhrase = scanner.nextLine();
 
+
+        jumbledToSpaced(jumbledPhrase);
+
     }
 
     public static String jumbledToSpaced(String string) {
         char[] jumbledCharacters = string.toCharArray();
         int amountOfWords = 0;
+        int addedSpaces = 0;
 
         for (int i = 0; i < jumbledCharacters.length; i++) {
             if (String.valueOf(jumbledCharacters[i]).equals(String.valueOf(jumbledCharacters[i]).toUpperCase())) {
@@ -29,7 +33,7 @@ public class SpaceToString {
 
         char[] properCharArray = new char[jumbledCharacters.length + (amountOfWords - 1)];
 
-        for (int i = 0; i < properCharArray.length; i++) {
+        for (int i = properCharArray.length - 1; i > 0; i--) {
 
         }
         return null;
