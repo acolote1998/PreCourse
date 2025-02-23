@@ -48,4 +48,16 @@ public class PasswordValidator {
         return containsUppercase;
     }
 
+    public static boolean containsLowercase(String password) {
+        char[] passArray = password.toCharArray();
+        boolean containsLowercase = false;
+
+        for (int i = 0; i < passArray.length; i++) {
+            if (String.valueOf(passArray[i]).equals(String.valueOf(passArray[i]).toLowerCase())) {
+                containsLowercase = true;
+            } else containsLowercase = false;
+        }
+        return containsLowercase;
+    }
+
 }
