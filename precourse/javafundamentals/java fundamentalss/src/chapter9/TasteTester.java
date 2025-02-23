@@ -27,6 +27,10 @@ public class TasteTester {
         birthdayCake.setPrice(100);
         birthdayCake.setCandles(5);
         //
+        WeddingCake weddingCake = new WeddingCake();
+        weddingCake.setFlavor("Vanilla");
+        weddingCake.setPrice(850);
+        weddingCake.setTiers("5");
 
     }
 
