@@ -26,7 +26,9 @@ public class PasswordValidator {
         String newPassowrd = scanner.next();
 
         scanner.close();
-        
+
+        verifyingPassword(newPassowrd, currentPassowrd, username);
+
     }
 
     public static boolean isMoreThanEight(String password) {
