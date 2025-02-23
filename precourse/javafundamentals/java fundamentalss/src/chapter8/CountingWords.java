@@ -9,6 +9,9 @@ new line.
  */
 
 public class CountingWords {
+
+    private static String words[];
+
     public static void main(String args[]) {
 
     }
