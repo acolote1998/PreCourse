@@ -2,6 +2,11 @@ package chapter9;
 
 public class Employee extends Person {
 
+    public Employee() {
+        super("julieta");
+        System.out.println("In employee");
+    }
+
     private int employeeID;
     private String title;
 
