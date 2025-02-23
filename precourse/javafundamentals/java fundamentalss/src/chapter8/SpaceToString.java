@@ -6,8 +6,12 @@ String where all words are written together
 with no spaces. Each new words begins with a capital letter.
  */
 
+import java.util.Scanner;
+
 public class SpaceToString {
     public static void main(String args[]) {
+
+        Scanner scanner = new Scanner(System.in);
 
     }
 
