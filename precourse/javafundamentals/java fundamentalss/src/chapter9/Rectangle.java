@@ -9,6 +9,10 @@ public class Rectangle {
         return (2 * length) + (2 * width);
     }
 
+    public void print() {
+        System.out.println("I am a rectangle");
+    }
+
     public double getLength() {
         return length;
     }
