@@ -18,7 +18,7 @@ public abstract class Animal {
     abstract public void makeSound();
 
     public void eat(String animal) {
-        System.out.println("The " + animal + " is eating");
+        System.out.println("The " + animal + " is eating. Animal class");
     }
 
 
