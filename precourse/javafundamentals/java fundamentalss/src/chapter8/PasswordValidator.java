@@ -36,4 +36,16 @@ public class PasswordValidator {
         } else return false;
     }
 
+    public static boolean containsUppercase(String password) {
+        char[] passArray = password.toCharArray();
+        boolean containsUppercase = false;
+
+        for (int i = 0; i < passArray.length; i++) {
+            if (String.valueOf(passArray[i]).equals(String.valueOf(passArray[i]).toUpperCase())) {
+                containsUppercase = true;
+            } else containsUppercase = false;
+        }
+        return containsUppercase;
+    }
+
 }
