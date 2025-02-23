@@ -5,5 +5,8 @@ public class Zoo {
         Dog rocky = new Dog();
         rocky.fetch();
         rocky.makeSound();
+
+        Animal sasha = new Dog();
+        sasha.makeSound();
     }
 }
