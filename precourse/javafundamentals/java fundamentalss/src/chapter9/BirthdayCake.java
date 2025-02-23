@@ -15,7 +15,7 @@ tiers. Include getter and setter method
 Create a TasteTester class to test our your inheritance
 
  */
-public class BirthdayCake {
+public class BirthdayCake extends Cake {
     public int getCandles() {
         return candles;
     }

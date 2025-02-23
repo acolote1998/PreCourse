@@ -17,9 +17,17 @@ Create a TasteTester class to test our your inheritance
  */
 public class TasteTester {
     public static void main(String args[]) {
+        //
         Cake cake = new Cake();
         cake.setFlavor("Chocolate");
         cake.setPrice(150);
+        //
+        BirthdayCake birthdayCake = new BirthdayCake();
+        birthdayCake.setFlavor("Orange");
+        birthdayCake.setPrice(100);
+        birthdayCake.setCandles(5);
+        //
+
     }
 
 }
