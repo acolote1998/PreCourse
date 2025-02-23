@@ -35,6 +35,10 @@ public class TasteTester {
         System.out.println("The regular cake is made of");
         System.out.println(cake.flavor + " and it costs " + cake.price);
 
+        System.out.println("The birthday cake is made of");
+        System.out.println(birthdayCake.flavor + " and it costs " + birthdayCake.price);
+        System.out.println("It comes with " + birthdayCake.candles + " candles");
+
 
     }
 
