@@ -5,7 +5,7 @@ public class ShapeTester {
 
         Shape rectangle = new Rectangle(5, 5);
         rectangle.print();
-        rectangle.calculateArea();
+        System.out.println(rectangle.calculateArea());
 
     }
 }
