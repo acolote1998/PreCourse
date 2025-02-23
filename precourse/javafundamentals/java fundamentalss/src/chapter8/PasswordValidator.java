@@ -47,7 +47,7 @@ public class PasswordValidator {
             if (String.valueOf(passArray[i]).equals(String.valueOf(passArray[i]).toUpperCase())) {
                 containsUppercase = true;
                 break;
-                
+
             }
         }
         return containsUppercase;
@@ -107,6 +107,12 @@ public class PasswordValidator {
 
         if (containsAnotherString(password, currentUsername)) {
             System.out.println("Your new password cannot contain your current username");
+        }
+
+        if (isMoreThanEight(password) && containsUppercase(password) && containsLowercase(password)
+                && containsSpecialCharacters(password) && !containsAnotherString(password, currentPassword)
+                && !containsAnotherString(password, currentUsername)) {
+            System.out.println("Your new password meets all the required criteria!");
         }
     }
 
