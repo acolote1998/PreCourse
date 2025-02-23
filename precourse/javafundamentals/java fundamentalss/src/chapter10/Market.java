@@ -22,5 +22,18 @@ public class Market {
         Fruit appleF = new Apple(50);
         Banana bananaPosta = new Banana(120);
         Apple apple = new Apple(60);
+
+        bananaF.makeJuice();
+        ((Banana) bananaF).peal();
+        //
+        appleF.makeJuice();
+        ((Apple) appleF).removeSeeds();
+        //
+        bananaPosta.makeJuice();
+        bananaPosta.peal();
+        //
+        apple.makeJuice();
+        apple.removeSeeds();
+
     }
 }
