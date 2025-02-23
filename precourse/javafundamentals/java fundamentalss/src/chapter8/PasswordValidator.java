@@ -26,6 +26,7 @@ public class PasswordValidator {
         String newPassowrd = scanner.next();
 
         scanner.close();
+        
     }
 
     public static boolean isMoreThanEight(String password) {
@@ -75,6 +76,32 @@ public class PasswordValidator {
             }
         }
         return containsSpecialCharacter;
+    }
+
+    public static void verifyingPassword(String password, String currentPassword, String currentUsername) {
+        if (!isMoreThanEight(password)) {
+            System.out.println("Your password is not at least 8 characters long");
+        }
+
+        if (!containsUppercase(password)) {
+            System.out.println("Your password does not contain an uppercase character");
+        }
+
+        if (!containsLowercase(password)) {
+            System.out.println("Your password does not contain a lowercase character");
+        }
+
+        if (!containsSpecialCharacters(password)) {
+            System.out.println("Your password does not contain a special character");
+        }
+
+        if (containsAnotherString(password, currentPassword)) {
+            System.out.println("Your new password cannot contain your current password");
+        }
+
+        if (containsAnotherString(password, currentUsername)) {
+            System.out.println("Your new password cannot contain your current username");
+        }
     }
 
 
