@@ -14,4 +14,7 @@ public interface Product {
 
     void setColor(String color);
 
+    default String getBarcode() {
+        return "no barcode";
+    }
 }
