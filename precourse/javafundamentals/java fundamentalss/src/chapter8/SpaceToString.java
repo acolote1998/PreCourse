@@ -12,6 +12,8 @@ public class SpaceToString {
     public static void main(String args[]) {
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Please write a Jumbled phrase");
+        String jumbledPhrase = scanner.nextLine();
 
     }
 
