@@ -17,4 +17,10 @@ of these objects
  */
 
 public class Market {
+    public static void main(String args[]) {
+        Fruit bananaF = new Banana(100);
+        Fruit appleF = new Apple(50);
+        Banana bananaPosta = new Banana(120);
+        Apple apple = new Apple(60);
+    }
 }
