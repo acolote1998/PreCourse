@@ -12,6 +12,15 @@ public class wordBackwards {
 
         Scanner scanner = new Scanner(System.in);
         String givenWord;
+
+
+    }
+
+    private static String printBackwards(String string) {
+        char[] charArray = string.toCharArray();
         
+        String wordBackwards = "";
+
+        return wordBackwards;
     }
 }
