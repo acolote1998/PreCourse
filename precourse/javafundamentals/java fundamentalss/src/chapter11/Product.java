@@ -8,7 +8,7 @@ public interface Product {
 
     String getName();
 
-    void setName();
+    void setName(String name);
 
     String getColor();
 
