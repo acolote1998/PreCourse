@@ -15,8 +15,8 @@ public class SpaceToString {
         System.out.println("Please write a Jumbled phrase");
         String jumbledPhrase = scanner.nextLine();
 
-
-        jumbledToSpaced(jumbledPhrase);
+        System.out.println("The correct string is");
+        System.out.println(jumbledToSpaced(jumbledPhrase));
 
     }
 
@@ -36,7 +36,6 @@ public class SpaceToString {
 
         for (int i = jumbledCharacters.length - 1; i > 0; i--) {
             if (String.valueOf(jumbledCharacters[i]).equals(String.valueOf(jumbledCharacters[i]).toLowerCase())) {
-                System.out.println(properCharArray.length);
                 properCharArray[amountOfCharsToPlace] = jumbledCharacters[i];
             } else {
                 properCharArray[amountOfCharsToPlace] = jumbledCharacters[i];
