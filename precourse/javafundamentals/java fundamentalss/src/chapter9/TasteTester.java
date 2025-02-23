@@ -32,6 +32,10 @@ public class TasteTester {
         weddingCake.setPrice(850);
         weddingCake.setTiers("5");
 
+        System.out.println("The regular cake is made of");
+        System.out.println(cake.flavor + " and it costs " + cake.price);
+
+
     }
 
 }
