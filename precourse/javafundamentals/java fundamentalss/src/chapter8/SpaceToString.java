@@ -19,6 +19,14 @@ public class SpaceToString {
 
     public static String jumbledToSpaced(String string) {
         char[] jumbledCharacters = string.toCharArray();
+        int amountOfWords = 0;
+
+        for (int i = 0; i < jumbledCharacters.length; i++) {
+            if (String.valueOf(jumbledCharacters[i]).equals(String.valueOf(jumbledCharacters[i]).toUpperCase())) {
+                amountOfWords++;
+            }
+        }
+        System.out.println(amountOfWords);
         return null;
     }
 }
