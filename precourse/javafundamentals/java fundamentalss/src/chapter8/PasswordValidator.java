@@ -60,4 +60,9 @@ public class PasswordValidator {
         return containsLowercase;
     }
 
+    public static boolean containsAnotherString(String desiredPassword, String toBeTheContent) {
+        return desiredPassword.contains(toBeTheContent);
+    }
+
+
 }
