@@ -20,7 +20,7 @@ public class CountingWords {
         System.out.println("Please write a sentence and I will give you back its words");
         String string = scanner.nextLine();
         printWords(words, string);
-
+        scanner.close();
     }
 
     public static void printWords(String[] array, String string) {
