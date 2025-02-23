@@ -34,6 +34,8 @@ public class SpaceToString {
         char[] properCharArray = new char[jumbledCharacters.length + (amountOfWords - 1)];
         int amountOfCharsToPlace = properCharArray.length - 1;
 
+        properCharArray[0] = jumbledCharacters[0];
+
         for (int i = jumbledCharacters.length - 1; i > 0; i--) {
             if (String.valueOf(jumbledCharacters[i]).equals(String.valueOf(jumbledCharacters[i]).toLowerCase())) {
                 properCharArray[amountOfCharsToPlace] = jumbledCharacters[i];
