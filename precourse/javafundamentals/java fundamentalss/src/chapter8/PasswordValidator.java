@@ -27,4 +27,13 @@ public class PasswordValidator {
 
         scanner.close();
     }
+
+    public static boolean isMoreThanEight(String password) {
+        char[] passArray = password.toCharArray();
+
+        if (passArray.length >= 8) {
+            return true;
+        } else return false;
+    }
+
 }
