@@ -12,14 +12,10 @@ the Animal class
 Create a Farm class to test the implementations
 
  */
+public class Duck extends Animal {
 
-public abstract class Animal {
-
-    abstract public void makeSound();
-
-    public void eat(String animal) {
-        System.out.println("The " + animal + " is eating");
+    public void makeSound() {
+        System.out.println("The duck goes quack quack");
     }
-
-
+    
 }

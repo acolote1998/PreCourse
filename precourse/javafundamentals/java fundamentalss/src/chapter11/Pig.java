@@ -13,13 +13,12 @@ Create a Farm class to test the implementations
 
  */
 
-public abstract class Animal {
-
-    abstract public void makeSound();
+public class Pig extends Animal {
+    public void makeSound() {
+        System.out.println("The pig makes oink ink");
+    }
 
     public void eat(String animal) {
         System.out.println("The " + animal + " is eating");
     }
-
-
 }
