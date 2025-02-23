@@ -64,5 +64,18 @@ public class PasswordValidator {
         return desiredPassword.contains(toBeTheContent);
     }
 
+    public static boolean containsSpecialCharacters(String desiredPassword) {
+        boolean containsSpecialCharacter = false;
+        char[] charArray = desiredPassword.toCharArray();
+
+        for (int i = 0; i < charArray.length; i++) {
+            if (!Character.isLetterOrDigit(charArray[i])) {
+                containsSpecialCharacter = true;
+                break;
+            }
+        }
+        return containsSpecialCharacter;
+    }
+
 
 }
