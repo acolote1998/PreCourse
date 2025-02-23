@@ -29,7 +29,9 @@ public class SpaceToString {
 
         char[] properCharArray = new char[jumbledCharacters.length + (amountOfWords - 1)];
 
-        System.out.println(amountOfWords);
+        for (int i = 0; i < properCharArray.length; i++) {
+
+        }
         return null;
     }
 }
