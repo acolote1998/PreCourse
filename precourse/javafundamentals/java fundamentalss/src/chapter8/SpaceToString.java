@@ -32,10 +32,19 @@ public class SpaceToString {
         }
 
         char[] properCharArray = new char[jumbledCharacters.length + (amountOfWords - 1)];
+        int amountOfCharsToPlace = properCharArray.length - 1;
 
-        for (int i = properCharArray.length - 1; i > 0; i--) {
-
+        for (int i = jumbledCharacters.length - 1; i > 0; i--) {
+            if (String.valueOf(jumbledCharacters[i]).equals(String.valueOf(jumbledCharacters[i]).toLowerCase())) {
+                System.out.println(properCharArray.length);
+                properCharArray[amountOfCharsToPlace] = jumbledCharacters[i];
+            } else {
+                properCharArray[amountOfCharsToPlace] = jumbledCharacters[i];
+                amountOfCharsToPlace--;
+                properCharArray[amountOfCharsToPlace] = ' ';
+            }
+            amountOfCharsToPlace--;
         }
-        return null;
+        return new String(properCharArray);
     }
 }
