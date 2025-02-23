@@ -21,8 +21,13 @@ public class wordBackwards {
         char[] charArray = string.toCharArray();
 
         char[] charBackwardsArray = new char[charArray.length];
-        
-        String wordBackwards = "";
+
+        for (int i = 0; i < charArray.length; i++) {
+
+            charBackwardsArray[i] = charArray[(charArray.length - 1) - i];
+        }
+
+        String wordBackwards = new String(charBackwardsArray);
 
         return wordBackwards;
     }
