@@ -9,5 +9,9 @@ public class Zoo {
     */
         Animal sasha = new Dog();
         sasha.makeSound();
+
+        sasha = new Cat();
+
+        sasha.makeSound();
     }
 }
