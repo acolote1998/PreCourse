@@ -75,6 +75,8 @@ public class LoopingThroughCollections {
         for (var entry : fruitCalories.entrySet()) {
             System.out.println(entry.getValue());
         }
+
+        fruitCalories.forEach((k, v) -> System.out.println("Fruit: " + k + " Calories: " + v));
     }
 
 }
