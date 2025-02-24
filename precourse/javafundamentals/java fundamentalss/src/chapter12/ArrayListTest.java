@@ -8,5 +8,11 @@ public class ArrayListTest {
 
         List fruit = new ArrayList();
 
+        fruit.add("apple");
+        fruit.add("lemon");
+        fruit.add("banana");
+        fruit.add("apple");
+
+
     }
 }
