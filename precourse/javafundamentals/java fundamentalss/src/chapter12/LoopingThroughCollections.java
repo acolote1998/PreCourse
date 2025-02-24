@@ -5,7 +5,7 @@ import java.util.*;
 
 public class LoopingThroughCollections {
     public static void main(String[] args) {
-
+        setDemo();
     }
 
     public static void setDemo() {
@@ -18,6 +18,12 @@ public class LoopingThroughCollections {
 
         System.out.println(fruit.size());
         System.out.println(fruit);
+
+        var i = fruit.iterator();
+        while (i.hasNext()) {
+            System.out.println(i.next());
+        }
+
     }
 
     public static void listDemo() {
