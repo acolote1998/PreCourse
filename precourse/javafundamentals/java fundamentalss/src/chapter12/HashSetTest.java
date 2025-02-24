@@ -14,6 +14,7 @@ public class HashSetTest {
         fruit.add("lemon");
 
         System.out.println(fruit.size());
+        System.out.println(fruit);
 
     }
 }
