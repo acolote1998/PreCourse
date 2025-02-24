@@ -10,6 +10,7 @@ public class HashMapTest {
         fruitCalories.put("lemon", 10);
         fruitCalories.put("banana", 105);
         fruitCalories.put("lemon", 50);
+        fruitCalories.putIfAbsent("kiwi", 35);
 
         System.out.println(fruitCalories.size());
         System.out.println(fruitCalories);
