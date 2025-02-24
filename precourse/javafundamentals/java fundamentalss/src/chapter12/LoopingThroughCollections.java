@@ -5,7 +5,7 @@ import java.util.*;
 
 public class LoopingThroughCollections {
     public static void main(String[] args) {
-        setDemo();
+        mapDemo();
     }
 
     public static void setDemo() {
@@ -63,7 +63,7 @@ public class LoopingThroughCollections {
     }
 
     public static void mapDemo() {
-        Map fruitCalories = new HashMap();
+        Map<String, Integer> fruitCalories = new HashMap();
         fruitCalories.put("apple", 95);
         fruitCalories.put("lemon", 20);
         fruitCalories.put("banana", 105);
@@ -71,6 +71,10 @@ public class LoopingThroughCollections {
         fruitCalories.put("lemon", 17);
 
         // System.out.println(fruitCalories.size());
+
+        for (var entry : fruitCalories.entrySet()) {
+            System.out.println(entry.getValue());
+        }
     }
 
 }
