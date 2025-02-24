@@ -8,5 +8,10 @@ public class HashSetTest {
         Set fruit = new HashSet();
 
         fruit.add("apple");
+        fruit.add("lemon");
+        fruit.add("banana");
+        fruit.add("orange");
+        fruit.add("lemon");
+
     }
 }
