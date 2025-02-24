@@ -13,6 +13,6 @@ public class ArrayListTest {
         fruit.add("banana");
         fruit.add("apple");
 
-
+        System.out.println(fruit.get(2)); // banana
     }
 }
