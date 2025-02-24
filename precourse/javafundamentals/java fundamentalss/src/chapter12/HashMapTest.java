@@ -16,5 +16,9 @@ public class HashMapTest {
         System.out.println(fruitCalories.get("lemon"));
 
         System.out.println(fruitCalories.entrySet());
+
+        fruitCalories.remove("lemon");
+
+        System.out.println(fruitCalories);
     }
 }
