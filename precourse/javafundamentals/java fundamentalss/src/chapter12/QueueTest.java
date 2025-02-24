@@ -13,6 +13,7 @@ public class QueueTest {
         fruit.add("orange");
         fruit.add("lemon");
 
+        System.out.println(fruit.size());
 
     }
 }
