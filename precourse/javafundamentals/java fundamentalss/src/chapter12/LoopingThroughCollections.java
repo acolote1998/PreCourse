@@ -70,7 +70,7 @@ public class LoopingThroughCollections {
         fruitCalories.put("orange", 45);
         fruitCalories.put("lemon", 17);
 
-        System.out.println(fruitCalories.size());
+        // System.out.println(fruitCalories.size());
     }
 
 }
