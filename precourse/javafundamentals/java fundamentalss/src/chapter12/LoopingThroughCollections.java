@@ -9,7 +9,7 @@ public class LoopingThroughCollections {
     }
 
     public static void setDemo() {
-        Set fruit = new HashSet();
+        Set<String> fruit = new HashSet();
         fruit.add("apple");
         fruit.add("lemon");
         fruit.add("banana");
@@ -22,6 +22,10 @@ public class LoopingThroughCollections {
         var i = fruit.iterator();
         while (i.hasNext()) {
             System.out.println(i.next());
+        }
+
+        for (String item : fruit) {
+            System.out.println(item);
         }
 
     }
