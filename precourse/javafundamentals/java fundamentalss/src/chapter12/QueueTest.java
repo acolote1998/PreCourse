@@ -20,5 +20,7 @@ public class QueueTest {
         fruit.remove();
         System.out.println(fruit);
 
+        System.out.println(fruit.peek());
+
     }
 }
