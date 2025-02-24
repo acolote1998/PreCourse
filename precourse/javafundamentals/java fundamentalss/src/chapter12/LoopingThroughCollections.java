@@ -18,6 +18,8 @@ public class LoopingThroughCollections {
 
         System.out.println(fruit.size());
         System.out.println(fruit);
+/*
+
 
         var i = fruit.iterator();
         while (i.hasNext()) {
@@ -28,6 +30,8 @@ public class LoopingThroughCollections {
             System.out.println(item);
         }
 
+ */
+        fruit.forEach(x -> System.out.println(x));
     }
 
     public static void listDemo() {
