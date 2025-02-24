@@ -30,8 +30,10 @@ public class LoopingThroughCollections {
             System.out.println(item);
         }
 
- */
+
         fruit.forEach(x -> System.out.println(x));
+
+ */
     }
 
     public static void listDemo() {
