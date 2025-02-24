@@ -15,5 +15,7 @@ public class QueueTest {
 
         System.out.println(fruit.size());
 
+        System.out.println(fruit);
+
     }
 }
