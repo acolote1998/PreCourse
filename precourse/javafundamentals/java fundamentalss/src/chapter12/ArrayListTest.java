@@ -15,5 +15,6 @@ public class ArrayListTest {
 
         System.out.println(fruit.get(2)); // banana
         System.out.println(fruit.size());//4
+        System.out.println(fruit);// prints all the elements of the list
     }
 }
