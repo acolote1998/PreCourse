@@ -15,6 +15,8 @@ public class ListOfTest {
 	at chapter12.ListOfTest.main(ListOfTest.java:8)
 
         since we cannot change a list that was created with List.of
+
+        This applies for sets and maps
          */
 
     }
