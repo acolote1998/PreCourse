@@ -17,5 +17,8 @@ public class QueueTest {
 
         System.out.println(fruit);
 
+        fruit.remove();
+        System.out.println(fruit);
+
     }
 }
