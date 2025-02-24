@@ -9,5 +9,8 @@ public class HashMapTest {
         fruitCalories.put("apple", 95);
         fruitCalories.put("lemon", 10);
         fruitCalories.put("banana", 105);
+
+        System.out.println(fruitCalories.size());
+        System.out.println(fruitCalories);
     }
 }
