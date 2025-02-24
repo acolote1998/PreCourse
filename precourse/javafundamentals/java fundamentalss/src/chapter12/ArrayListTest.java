@@ -14,5 +14,6 @@ public class ArrayListTest {
         fruit.add("apple");
 
         System.out.println(fruit.get(2)); // banana
+        System.out.println(fruit.size());//4
     }
 }
