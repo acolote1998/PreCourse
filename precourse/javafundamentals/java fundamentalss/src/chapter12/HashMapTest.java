@@ -12,5 +12,7 @@ public class HashMapTest {
 
         System.out.println(fruitCalories.size());
         System.out.println(fruitCalories);
+
+        System.out.println(fruitCalories.get("lemon"));
     }
 }
