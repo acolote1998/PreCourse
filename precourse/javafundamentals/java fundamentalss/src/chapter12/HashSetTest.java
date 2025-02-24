@@ -13,5 +13,7 @@ public class HashSetTest {
         fruit.add("orange");
         fruit.add("lemon");
 
+        System.out.println(fruit.size());
+
     }
 }
