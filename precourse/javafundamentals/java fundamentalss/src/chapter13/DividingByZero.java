@@ -16,7 +16,15 @@ This statement should be outputted no matter what.
 public class DividingByZero {
     public static void main(String[] args) {
 
-        int c = 30 / 0;
+        try {
+
+            int c = 30 / 0;
+
+        } catch (Exception e) {
+            System.out.println(e);
+        } finally {
+            System.out.println("Division is fun");
+        }
 
     }
 }
