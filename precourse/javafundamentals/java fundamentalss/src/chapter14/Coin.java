@@ -15,6 +15,12 @@ and assigns the value to side
 import java.util.Random;
 
 public class Coin {
+
+    private String side;
+    private String heads = "heads";
+    private String tails = "tails";
+
+
     public String getSide() {
         return side;
     }
@@ -23,11 +29,7 @@ public class Coin {
         this.side = side;
     }
 
-    private String side;
-    private String heads = "heads";
-    private String tails = "tails";
 
-    
     public String randomSide() {
         Random sideFlip = new Random();
         if (sideFlip.nextBoolean()) {
