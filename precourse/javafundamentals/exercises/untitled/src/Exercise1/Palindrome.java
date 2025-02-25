@@ -29,15 +29,18 @@ isPalindrome("hello") should return false
 
  */
 
+import java.util.Scanner;
+
 public class Palindrome {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        isAPalindrome(scanner.nextLine());
     }
 
     public static boolean isAPalindrome(String str) {
         boolean isPal = false;
-        char[] stringToCheck = str.trim().toCharArray();
-        System.out.println(stringToCheck);
+        char[] cleanString = str.trim().replace(" ", "").toLowerCase().toCharArray();
         return isPal;
     }
 }
