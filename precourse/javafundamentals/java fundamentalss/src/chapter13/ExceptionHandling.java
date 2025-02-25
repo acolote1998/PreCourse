@@ -17,7 +17,18 @@ public class ExceptionHandling {
         } catch (Exception e) {
             System.out.println(e);
         }
+        try {
+            calculateSalary(41);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 
+    }
+
+    public static void calculateSalary(double hours) {
+        if (hours > 40) {
+            throw new IllegalArgumentException("Overtime not allowed");
+        }
     }
 
     public static void createNewFile() {
