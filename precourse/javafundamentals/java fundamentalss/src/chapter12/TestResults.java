@@ -55,10 +55,15 @@ public class TestResults {
         return newGrades();
     }
 
-    public static Map updateGrades(Map<String, Integer> initialGrades, Map<String, Integer> newGradesTaken) {
-        Map<String, Integer> updatedMap = new HashMap<>();
+    public static void updateGrades(Map<String, Integer> initialGrades, Map<String, Integer> newGradesTaken) {
+        System.out.println("Updater grades:");
+        for (var entry : newGradesTaken.entrySet()) {
+            if (entry.getValue() > (initialGrades.get(entry.getKey()))) {
+                initialGrades.put(entry.getKey(), newGradesTaken.get(entry.getKey()));
+            }
+            initialGrades.forEach((String k, Integer v) -> System.out.println("Student: " + k + " Grade: " + v));
+        }
 
-        return updatedMap;
     }
 
 }
