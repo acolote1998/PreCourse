@@ -17,5 +17,9 @@ public class CoinTossGame {
         Coin newCoin = new Coin();
 
         System.out.println(newCoin.flip());
+        System.out.println(newCoin.flip());
+        System.out.println(newCoin.flip());
+        System.out.println(newCoin.flip());
+        System.out.println(newCoin.flip());
     }
 }
