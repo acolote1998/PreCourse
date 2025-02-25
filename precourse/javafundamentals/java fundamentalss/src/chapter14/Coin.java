@@ -33,6 +33,11 @@ public class Coin {
         side = randomSide();
     }
 
+    public String flip() {
+        side = randomSide();
+        return side;
+    }
+
     public String randomSide() {
         Random sideFlip = new Random();
         if (sideFlip.nextBoolean()) {
