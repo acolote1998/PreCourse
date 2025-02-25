@@ -55,4 +55,10 @@ public class TestResults {
         return newGrades();
     }
 
+    public static Map updateGrades(Map<String, Integer> initialGrades, Map<String, Integer> newGradesTaken) {
+        Map<String, Integer> updatedMap = new HashMap<>();
+
+        return updatedMap;
+    }
+
 }
