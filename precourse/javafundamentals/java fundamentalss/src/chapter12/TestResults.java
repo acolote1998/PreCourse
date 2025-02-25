@@ -21,7 +21,7 @@ public class TestResults {
 
     }
 
-    public static void initialGrades() {
+    public static Map<String, Integer> initialGrades() {
         Map<String, Integer> studentGrades = new HashMap<>();
 
         studentGrades.put("Aki", 35);
@@ -35,7 +35,7 @@ public class TestResults {
         studentGrades.put("Isla", 77);
         studentGrades.put("Jack", 63);
 
-        System.out.println(studentGrades);
+        return studentGrades;
     }
 
 }
