@@ -13,4 +13,7 @@ and assigns the value to side
  */
 
 public class CoinTossGame {
+    public static void main(String[] args) {
+        Coin newCoin = new Coin();
+    }
 }
