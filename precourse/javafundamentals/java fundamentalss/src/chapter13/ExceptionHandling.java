@@ -11,7 +11,12 @@ public class ExceptionHandling {
 
         //  createNewFile();
 
-        numbersExceptionHandling();
+        // numbersExceptionHandling();
+        try {
+            createNewFileRethrow();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 
     }
 
@@ -23,6 +28,12 @@ public class ExceptionHandling {
             System.out.println(e);
             e.printStackTrace();
         }
+    }
+
+    public static void createNewFileRethrow() throws IOException {
+        File file = new File("resources/nonexistent.txt");
+        file.createNewFile();
+
     }
 
     public static void numbersExceptionHandling() {
