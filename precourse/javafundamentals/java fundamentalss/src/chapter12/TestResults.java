@@ -56,7 +56,7 @@ public class TestResults {
     }
 
     public static void updateGrades(Map<String, Integer> initialGrades, Map<String, Integer> newGradesTaken) {
-        System.out.println("Updater grades:");
+        System.out.println("Updated grades:");
         for (var entry : newGradesTaken.entrySet()) {
             if (entry.getValue() > (initialGrades.get(entry.getKey()))) {
                 initialGrades.put(entry.getKey(), newGradesTaken.get(entry.getKey()));
