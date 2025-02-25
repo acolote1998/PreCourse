@@ -18,8 +18,14 @@ public static String reverseString(String input)
 
  */
 
+import java.util.Scanner;
+
 public class Assignment {
     public static void main(String[] args){
+
+        Scanner scanner = new Scanner(System.in);
+
+        reverseString(scanner.nextLine());
 
     }
     public static String reverseString(String string){
