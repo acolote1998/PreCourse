@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class TestResults {
     public static void main(String[] args) {
-
+        updateGrades(initialGrades(), newGrades());
     }
 
     public static Map<String, Integer> initialGrades() {
@@ -52,7 +52,7 @@ public class TestResults {
         newGrades.put("Isla", 56);
         newGrades.put("Jack", 94);
 
-        return newGrades();
+        return newGrades;
     }
 
     public static void updateGrades(Map<String, Integer> initialGrades, Map<String, Integer> newGradesTaken) {
@@ -61,8 +61,9 @@ public class TestResults {
             if (entry.getValue() > (initialGrades.get(entry.getKey()))) {
                 initialGrades.put(entry.getKey(), newGradesTaken.get(entry.getKey()));
             }
-            initialGrades.forEach((String k, Integer v) -> System.out.println("Student: " + k + " Grade: " + v));
         }
+        initialGrades.forEach((String k, Integer v) -> System.out.println("Student: " + k + " Grade: " + v));
+
 
     }
 
