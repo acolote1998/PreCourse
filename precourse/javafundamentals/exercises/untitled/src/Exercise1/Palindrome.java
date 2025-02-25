@@ -35,14 +35,21 @@ public class Palindrome {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        isAPalindrome(scanner.nextLine());
+        System.out.println(isAPalindrome(scanner.nextLine()));
     }
 
     public static boolean isAPalindrome(String str) {
-        boolean isPal = false;
+
         char[] cleanString = str.trim().replace(" ", "").toLowerCase().toCharArray();
         char[] reverseString = new char[cleanString.length];
-        return isPal;
+
+        for (int i = (cleanString.length); i > 0; i--) {
+            reverseString[cleanString.length - i] = cleanString[i - 1];
+        }
+        String original = new String(cleanString);
+        String reversed = new String(reverseString);
+
+        return original.equals(reversed);
     }
 }
 
