@@ -25,7 +25,9 @@ public class Assignment {
 
         Scanner scanner = new Scanner(System.in);
 
-        reverseString(scanner.nextLine());
+System.out.println(reverseString(scanner.nextLine()));
+
+
 
     }
     public static String reverseString(String string){
@@ -33,11 +35,10 @@ public class Assignment {
     char[] originalString = string.toCharArray();
     char [] newString = new char[originalString.length];
 
-    for(int i=0;i<originalString.length;i++){
-        newString[(originalString.length-i)]=originalString[i];
+    for(int i=originalString.length;i>0;i--){
+        newString[(originalString.length-i)]=originalString[i-1];
     }
-    String result = new String();
-    result=newString.toString();
-        return result;
+        String result = new String(newString);
+    return result;
     }
 }
