@@ -30,4 +30,13 @@ isPalindrome("hello") should return false
  */
 
 public class Palindrome {
+public static void main(String[] args){
+
+    }
+    public static boolean isAPalindrome(String str){
+    boolean isPal=false;
+    return isPal;
+    }
 }
+
+
