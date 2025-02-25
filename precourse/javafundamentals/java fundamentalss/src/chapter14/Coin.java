@@ -17,8 +17,8 @@ import java.util.Random;
 public class Coin {
 
     private String side;
-    private String heads = "heads";
-    private String tails = "tails";
+    private static final String heads = "heads";
+    private static final String tails = "tails";
 
 
     public String getSide() {
