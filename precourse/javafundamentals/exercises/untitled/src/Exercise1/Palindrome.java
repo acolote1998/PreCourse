@@ -40,7 +40,7 @@ public class Palindrome {
 
     public static boolean isAPalindrome(String str) {
 
-        char[] cleanString = str.trim().replace(" ", "").toLowerCase().toCharArray();
+        char[] cleanString = str.trim().replaceAll("[^a-zA-Z0-9]", "").replace(" ", "").toLowerCase().toCharArray();
         char[] reverseString = new char[cleanString.length];
 
         for (int i = (cleanString.length); i > 0; i--) {
