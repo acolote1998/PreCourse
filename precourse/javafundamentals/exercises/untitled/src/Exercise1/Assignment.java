@@ -20,8 +20,6 @@ public static String reverseString(String input)
 
 import java.util.Scanner;
 
-import static jdk.vm.ci.meta.JavaKind.Char;
-
 public class Assignment {
     public static void main(String[] args){
 
@@ -31,7 +29,9 @@ public class Assignment {
 
     }
     public static String reverseString(String string){
-char[] originalString = string.toCharArray();
+
+    char[] originalString = string.toCharArray();
+    char [] newString = new char[originalString.length];
         return null;
     }
 }
