@@ -14,7 +14,7 @@ public class ExceptionHandling {
         File file = new File("resources/nonexistent.txt");
         try {
             file.createNewFile();
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println(e);
             e.printStackTrace();
         }
