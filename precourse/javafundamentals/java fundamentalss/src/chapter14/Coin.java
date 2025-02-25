@@ -29,6 +29,9 @@ public class Coin {
         this.side = side;
     }
 
+    public Coin() {
+        side = randomSide();
+    }
 
     public String randomSide() {
         Random sideFlip = new Random();
