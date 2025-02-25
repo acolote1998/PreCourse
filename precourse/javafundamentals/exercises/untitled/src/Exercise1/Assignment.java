@@ -32,6 +32,12 @@ public class Assignment {
 
     char[] originalString = string.toCharArray();
     char [] newString = new char[originalString.length];
-        return null;
+
+    for(int i=0;i<originalString.length;i++){
+        newString[(originalString.length-i)]=originalString[i];
+    }
+    String result = new String();
+    result=newString.toString();
+        return result;
     }
 }
