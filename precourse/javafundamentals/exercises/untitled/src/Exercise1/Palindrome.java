@@ -41,6 +41,7 @@ public class Palindrome {
     public static boolean isAPalindrome(String str) {
         boolean isPal = false;
         char[] cleanString = str.trim().replace(" ", "").toLowerCase().toCharArray();
+        char[] reverseString = new char[cleanString.length];
         return isPal;
     }
 }
