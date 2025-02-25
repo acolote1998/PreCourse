@@ -38,4 +38,11 @@ public class TestResults {
         return studentGrades;
     }
 
+    public static Map<String, Integer> newGrades() {
+        Map<String, Integer> newGrades = new HashMap<>();
+
+
+        return newGrades();
+    }
+
 }
