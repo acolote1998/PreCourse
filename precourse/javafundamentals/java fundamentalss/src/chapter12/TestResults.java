@@ -41,6 +41,16 @@ public class TestResults {
     public static Map<String, Integer> newGrades() {
         Map<String, Integer> newGrades = new HashMap<>();
 
+        newGrades.put("Aki", 35);
+        newGrades.put("Ben", 78);
+        newGrades.put("Clara", 91);
+        newGrades.put("Diego", 62);
+        newGrades.put("Elena", 85);
+        newGrades.put("Felix", 47);
+        newGrades.put("Grace", 73);
+        newGrades.put("Hugo", 89);
+        newGrades.put("Isla", 56);
+        newGrades.put("Jack", 94);
 
         return newGrades();
     }
