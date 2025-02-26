@@ -1,6 +1,7 @@
 package Exercise3;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /*
 
@@ -20,6 +21,8 @@ Return true if the two strings are anagrams, false otherwise.
  */
 public class AreAnagrams {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
 
     }
 
