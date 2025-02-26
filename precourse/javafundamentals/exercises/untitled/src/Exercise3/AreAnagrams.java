@@ -28,6 +28,8 @@ public class AreAnagrams {
         String string1 = scanner.nextLine();
         System.out.println("Second string:");
         String string2 = scanner.nextLine();
+
+        System.out.println(isAnagram(string1, string2));
     }
 
     public static boolean isAnagram(String string1, String string2) {
