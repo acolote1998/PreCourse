@@ -19,12 +19,16 @@ If no unique character is found, return null.
 
  */
 
+import java.util.HashMap;
+
 public class findFirstNonRepeatingChar {
     public static void main(String[] args) {
 
     }
 
     public static Character firstNonRepeatingChar(String stringToCheck) {
+        HashMap<Character, Integer> charCount = new HashMap<>();
+
         return null;
     }
 }
