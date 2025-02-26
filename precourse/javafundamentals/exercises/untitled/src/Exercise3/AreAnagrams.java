@@ -24,6 +24,10 @@ public class AreAnagrams {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("First string:");
+        String string1 = scanner.nextLine();
+        System.out.println("Second string:");
+        String string2 = scanner.nextLine();
     }
 
     public static boolean isAnagram(String string1, String string2) {
