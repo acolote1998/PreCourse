@@ -1,5 +1,7 @@
 package Exercise3;
 
+import java.util.Arrays;
+
 /*
 
 Exercise: Anagram Checker
@@ -21,7 +23,13 @@ public class AreAnagrams {
 
     }
 
-    public static boolean isAnagram() {
-        return false;
+    public static boolean isAnagram(String string1, String string2) {
+        char[] firstString = string1.replaceAll(" ", "").toLowerCase().replaceAll("[^a-zA-Z0-9]", "").toCharArray();
+        Arrays.sort(firstString);
+
+        char[] secondString = string2.replaceAll(" ", "").toLowerCase().replaceAll("[^a-zA-Z0-9]", "").toCharArray();
+        Arrays.sort(secondString);
+
+        return Arrays.equals(firstString, secondString);
     }
 }
