@@ -20,4 +20,11 @@ If no unique character is found, return null.
  */
 
 public class findFirstNonRepeatingChar {
+    public static void main(String[] args) {
+
+    }
+
+    public static Character firstNonRepeatingChar(String stringToCheck) {
+        return null;
+    }
 }
