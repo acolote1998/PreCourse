@@ -27,7 +27,10 @@ public class findFirstNonRepeatingChar {
     }
 
     public static Character firstNonRepeatingChar(String stringToCheck) {
+
         HashMap<Character, Integer> charCount = new HashMap<>();
+
+        char[] stringCharArray = stringToCheck.toCharArray();
 
         return null;
     }
