@@ -24,6 +24,8 @@ import java.util.HashMap;
 public class findFirstNonRepeatingChar {
     public static void main(String[] args) {
 
+        firstNonRepeatingChar("holaaaaaao");
+
     }
 
     public static Character firstNonRepeatingChar(String stringToCheck) {
@@ -33,11 +35,16 @@ public class findFirstNonRepeatingChar {
         char[] stringCharArray = stringToCheck.toCharArray();
 
         for (int i = 0; i < stringCharArray.length; i++) {
-            int calculateValue = 1;
-            if (charCount.get(stringCharArray[i]) == null) {
-                charCount.put(stringCharArray[i], calculateValue);
+
+            if (charCount.containsKey(stringCharArray[i])) {
+
+                charCount.put(stringCharArray[i], charCount.get(stringCharArray[i]) + 1);
+
+
             } else {
-                charCount.put(stringCharArray[i], calculateValue++);
+
+                charCount.put(stringCharArray[i], 1);
+
             }
         }
 
