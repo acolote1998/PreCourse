@@ -33,7 +33,12 @@ public class findFirstNonRepeatingChar {
         char[] stringCharArray = stringToCheck.toCharArray();
 
         for (int i = 0; i < stringCharArray.length; i++) {
-            charCount.put(stringCharArray[i], charCount.get(stringCharArray[i]++));
+            int calculateValue = 1;
+            if (charCount.get(stringCharArray[i]) == null) {
+                charCount.put(stringCharArray[i], calculateValue);
+            } else {
+                charCount.put(stringCharArray[i], calculateValue++);
+            }
         }
 
         System.out.println(charCount);
