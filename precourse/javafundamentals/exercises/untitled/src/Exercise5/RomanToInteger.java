@@ -30,6 +30,23 @@ public class RomanToInteger {
 
         System.out.println(romToInt("III"));
 
+        System.out.println(romToInt("IV"));
+
+        System.out.println(romToInt("IX"));
+
+        System.out.println(romToInt("LVIII"));
+
+        System.out.println(romToInt("MCMXCIV"));
+
+        System.out.println(romToInt("XL"));
+
+        System.out.println(romToInt("CDXLIV"));
+
+        System.out.println(romToInt("MMM"));
+
+        System.out.println(romToInt("DCVII"));
+
+        System.out.println(romToInt("CXC"));
     }
 
     public static Integer romToInt(String string) {
