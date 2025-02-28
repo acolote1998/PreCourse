@@ -32,6 +32,14 @@ public class RomanToInteger {
 
     public static Integer romToInt(String string) {
         HashMap<String, Integer> romValues = new HashMap<>();
+        romValues.put("I", 1);
+        romValues.put("V", 5);
+        romValues.put("X", 10);
+        romValues.put("L", 50);
+        romValues.put("C", 100);
+        romValues.put("D", 500);
+        romValues.put("M", 1000);
+
         return 0;
     }
 }
