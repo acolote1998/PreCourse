@@ -24,7 +24,7 @@ import java.util.HashMap;
 public class findFirstNonRepeatingChar {
     public static void main(String[] args) {
 
-
+        System.out.println(firstNonRepeatingChar("Testing"));
     }
 
     public static Character firstNonRepeatingChar(String stringToCheck) {
