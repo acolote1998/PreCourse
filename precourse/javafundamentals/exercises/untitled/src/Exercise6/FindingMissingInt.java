@@ -25,19 +25,27 @@ Return the missing number.
 public class FindingMissingInt {
     public static void main(String[] args) {
 
+        System.out.println(findMissingNumber(new Integer[]{1, 2, 4, 5, 6})); // Expected Output: 3
+
+        System.out.println(findMissingNumber(new Integer[]{1, 3, 4, 5, 6})); // Expected Output: 2
+
+        System.out.println(findMissingNumber(new Integer[]{2, 3, 4, 5, 6})); // Expected Output: 1
+
+        System.out.println(findMissingNumber(new Integer[]{1})); // Expected Output: null
+
+        System.out.println(findMissingNumber(new Integer[]{10, 12, 13, 14})); // Expected Output: 11
 
     }
 
     public static Integer findMissingNumber(Integer[] arr) {
-        int totalSum = 0;
-        int expectedSum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            totalSum += (i + 1);
-            expectedSum += arr[i];
-        }
-        System.out.println(totalSum);
-        System.out.println(expectedSum);
 
-        return null;
+        //n = amount of numbers including the missing one
+
+        int n = arr.length + 1;
+
+        for (int i = 1; i < n; i++) {
+        }
+
+        return 0;
     }
 }
