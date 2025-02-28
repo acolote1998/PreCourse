@@ -40,12 +40,26 @@ public class FindingMissingInt {
     public static Integer findMissingNumber(Integer[] arr) {
 
         //n = amount of numbers including the missing one
+        //arraySum = total sum of the array indexes
+        //expectedSum = total expected value including the missing number
 
         int n = arr.length + 1;
+        int arraySum = 0;
+        int expectedSum = 0;
 
-        for (int i = 1; i < n; i++) {
+        if (2 > arr.length) {
+            return null;
+        } else {
+            for (int i = 0; i < arr.length; i++) {
+
+                arraySum += arr[i];
+
+
+            }
+            expectedSum = ((arr[0] + arr[arr.length - 1]) * n) / 2;
+
+
+            return expectedSum - arraySum;
         }
-
-        return 0;
     }
 }
