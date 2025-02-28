@@ -47,10 +47,17 @@ public class RomanToInteger {
 
         for (int i = 0; i < charArray.length; i++) {
 
-            romValues.get(charArray[i]);
+            if (romValues.get(charArray[(i + 1)]) < charArray.length) {
+                if (romValues.get(charArray[(i + 1)]) > romValues.get(charArray[i])) {
+                    resultSum += romValues.get(charArray[i]);
+                } else {
+                    resultSum += (romValues.get(charArray[(i + 1)]) - romValues.get(charArray[i]));
+                    i++;
+                }
+            } else resultSum += romValues.get(charArray[i]);
 
         }
 
-        return 0;
+        return resultSum;
     }
 }
