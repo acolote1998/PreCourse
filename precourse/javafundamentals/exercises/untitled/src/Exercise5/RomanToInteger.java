@@ -50,7 +50,7 @@ public class RomanToInteger {
         for (int i = 0; i < charArray.length; i++) {
 
             if ((i + 1) < charArray.length) {
-                if (romValues.get(charArray[(i + 1)]) > romValues.get(charArray[i])) {
+                if (romValues.get(charArray[(i + 1)]) > romValues.get(charArray[i]) || romValues.get(charArray[(i + 1)]) == romValues.get(charArray[i])) {
                     resultSum += romValues.get(charArray[i]);
                 } else {
                     resultSum += (romValues.get(charArray[(i + 1)]) - romValues.get(charArray[i]));
