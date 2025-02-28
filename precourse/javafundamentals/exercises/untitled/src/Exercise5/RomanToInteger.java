@@ -11,7 +11,19 @@ Roman numerals are read from left to right, but there's a twist:
 If a smaller-value symbol appears before a larger-value symbol, it is subtracted.
 If a smaller-value symbol appears after a larger-value symbol, it is added.
 
+🔑 Rules
+Symbol	Value
+I	1
+V	5
+X	10
+L	50
+C	100
+D	500
+M	1000
+
  */
+
+import java.util.HashMap;
 
 public class RomanToInteger {
     public static void main(String[] args) {
@@ -19,7 +31,7 @@ public class RomanToInteger {
     }
 
     public static Integer romToInt(String string) {
-
+        HashMap<String, Integer> romValues = new HashMap<>();
         return 0;
     }
 }
