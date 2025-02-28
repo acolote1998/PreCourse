@@ -66,7 +66,7 @@ public class RomanToInteger {
 
         for (int i = 0; i < charArray.length; i++) {
 
-            if ((i + 1) < charArray.length) {
+            if ((i + 1) < charArray.length) {// If the array contains one more index we can try to operate
                 if (romValues.get(charArray[(i + 1)]) > romValues.get(charArray[i]) || romValues.get(charArray[(i + 1)]) == romValues.get(charArray[i])) {
                     resultSum += romValues.get(charArray[i]);
                 } else {
