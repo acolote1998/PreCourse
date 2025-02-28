@@ -44,7 +44,7 @@ public class RomanToInteger {
 
         System.out.println(romToInt("MMM"));
 
-        System.out.println(romToInt("DCVII"));
+        System.out.println(romToInt("DCCVII"));
 
         System.out.println(romToInt("CXC"));
     }
@@ -67,7 +67,7 @@ public class RomanToInteger {
         for (int i = 0; i < charArray.length; i++) {
 
             if ((i + 1) < charArray.length) {// If the array contains one more index we can try to operate
-                if (romValues.get(charArray[(i + 1)]) > romValues.get(charArray[i]) || romValues.get(charArray[(i + 1)]) == romValues.get(charArray[i])) {
+                if (romValues.get(charArray[(i + 1)]) < romValues.get(charArray[i]) || romValues.get(charArray[(i + 1)]) == romValues.get(charArray[i])) {
                     resultSum += romValues.get(charArray[i]);
                 } else {
                     resultSum += (romValues.get(charArray[(i + 1)]) - romValues.get(charArray[i]));
