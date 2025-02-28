@@ -28,6 +28,8 @@ import java.util.HashMap;
 public class RomanToInteger {
     public static void main(String[] args) {
 
+        System.out.println(romToInt("III"));
+
     }
 
     public static Integer romToInt(String string) {
@@ -47,7 +49,7 @@ public class RomanToInteger {
 
         for (int i = 0; i < charArray.length; i++) {
 
-            if (romValues.get(charArray[(i + 1)]) < charArray.length) {
+            if ((i + 1) < charArray.length) {
                 if (romValues.get(charArray[(i + 1)]) > romValues.get(charArray[i])) {
                     resultSum += romValues.get(charArray[i]);
                 } else {
