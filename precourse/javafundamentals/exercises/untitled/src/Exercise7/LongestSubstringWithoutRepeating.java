@@ -28,9 +28,17 @@ System.out.println(lengthOfLongestSubstring("pwwkew")); // Expected Output: 3
 
 public class LongestSubstringWithoutRepeating {
     public static void main(String[] args) {
+
+        System.out.println(lengthOfLongestSubstring("abcabcbb"));
+
+        System.out.println(lengthOfLongestSubstring("bbbbb"));
+
+        System.out.println(lengthOfLongestSubstring("pwwkew"));
+
+
     }
 
-    public static int calculateHighestNotRepeating(String str) {
+    public static int lengthOfLongestSubstring(String str) {
         int maxRepeating = 0;
         char[] charArray = str.toLowerCase().toCharArray();
 
