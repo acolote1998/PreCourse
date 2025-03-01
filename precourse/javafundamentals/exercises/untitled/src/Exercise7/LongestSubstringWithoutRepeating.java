@@ -43,11 +43,13 @@ public class LongestSubstringWithoutRepeating {
         char[] charArray = str.toLowerCase().toCharArray();
 
         for (int i = 0; i < charArray.length; i++) {
-            if (maxDifferent != 0) {
-                if (charArray[(i - 1)] == charArray[i]) {
-                    maxDifferent++;
-                }
-            } else maxDifferent++;
+
+            if (i == 0) {
+                maxDifferent++;
+            } else {
+
+            }
+
         }
 
         return maxDifferent;
