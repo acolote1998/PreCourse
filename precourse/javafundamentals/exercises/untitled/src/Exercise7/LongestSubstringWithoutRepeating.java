@@ -35,11 +35,15 @@ import java.util.HashMap;
 public class LongestSubstringWithoutRepeating {
     public static void main(String[] args) {
 
-        System.out.println(lengthOfLongestSubstring("abcabcbb"));
+        System.out.println(lengthOfLongestSubstring("abcabcbb"));// Expected Output: 3
 
-        System.out.println(lengthOfLongestSubstring("bbbbb"));
-        
-        System.out.println(lengthOfLongestSubstring("pwwkew"));
+        System.out.println(lengthOfLongestSubstring("bbbbb"));// Expected Output: 1
+
+        System.out.println(lengthOfLongestSubstring("pwwkew"));// Expected Output: 3
+
+        System.out.println(lengthOfLongestSubstring("abcdefg")); // Expected Output: 7
+
+        System.out.println(lengthOfLongestSubstring("abcdefghijabcdefghij")); // Expected Output: 10
 
 
     }
