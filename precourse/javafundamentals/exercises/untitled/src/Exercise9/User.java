@@ -31,10 +31,16 @@ public class User {
     private String name;
     private ArrayList<Book> rentedBooks;
 
+    public User(String name) {
+        this.name = name;
+        this.rentedBooks = new ArrayList<>();
+    }
+
     public void rentBook(String ISBN, ArrayList<Book> availableBooksForRent) {
         for (Book book : availableBooksForRent) {
             if (book.getISBN().equals(ISBN)) {
                 rentedBooks.add(book);
+                book.setCheckedOut(true);
                 System.out.println("Book rented");
 
             }
