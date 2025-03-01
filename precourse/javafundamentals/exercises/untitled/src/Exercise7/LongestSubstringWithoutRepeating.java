@@ -26,6 +26,8 @@ System.out.println(lengthOfLongestSubstring("pwwkew")); // Expected Output: 3
 
  */
 
+import java.util.HashMap;
+
 public class LongestSubstringWithoutRepeating {
     public static void main(String[] args) {
 
@@ -42,13 +44,9 @@ public class LongestSubstringWithoutRepeating {
         int maxDifferent = 0;
         char[] charArray = str.toLowerCase().toCharArray();
 
+        HashMap<Character, Boolean> containedLetters = new HashMap<>();
+
         for (int i = 0; i < charArray.length; i++) {
-
-            if (i == 0) {
-                maxDifferent++;
-            } else {
-
-            }
 
         }
 
