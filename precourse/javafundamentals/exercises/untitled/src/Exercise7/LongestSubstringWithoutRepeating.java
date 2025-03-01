@@ -42,12 +42,14 @@ public class LongestSubstringWithoutRepeating {
 
     public static int lengthOfLongestSubstring(String str) {
         int maxDifferent = 0;
+
         char[] charArray = str.toLowerCase().toCharArray();
 
         HashMap<Character, Boolean> containedLetters = new HashMap<>();
 
+        //Setting all the chars in the hashmap
         for (int i = 0; i < charArray.length; i++) {
-
+            containedLetters.put(charArray[i], null);
         }
 
         return maxDifferent;
