@@ -31,6 +31,8 @@ public class LongestSubstringWithoutRepeating {
     }
 
     public static int calculateHighestNotRepeating(String str) {
+        int maxRepeating = 0;
 
+        return maxRepeating;
     }
 }
