@@ -36,7 +36,9 @@ public class LongestSubstringWithoutRepeating {
 
         for (int i = 0; i < charArray.length; i++) {
             if (maxRepeating != 0) {
-
+                if (charArray[(i - 1)] == charArray[i]) {
+                    maxRepeating++;
+                }
             } else maxRepeating++;
         }
 
