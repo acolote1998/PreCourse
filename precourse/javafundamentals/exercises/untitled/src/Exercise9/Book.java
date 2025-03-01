@@ -65,4 +65,9 @@ public class Book {
         isCheckedOut = false;
     }
 
+    @Override
+    public String toString() {
+        return "Title: " + title + ", Author: " + author + ", ISBN: " + ISBN + ", Checked Out: " + (isCheckedOut ? "Yes" : "No");
+    }
+
 }
