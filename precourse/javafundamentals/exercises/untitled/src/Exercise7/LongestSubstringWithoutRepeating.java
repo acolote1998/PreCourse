@@ -34,6 +34,12 @@ public class LongestSubstringWithoutRepeating {
         int maxRepeating = 0;
         char[] charArray = str.toLowerCase().toCharArray();
 
+        for (int i = 0; i < charArray.length; i++) {
+            if (maxRepeating != 0) {
+
+            } else maxRepeating++;
+        }
+
         return maxRepeating;
     }
 }
