@@ -50,13 +50,8 @@ public class LongestSubstringWithoutRepeating {
 
         HashMap<Character, Integer> containedLetters = new HashMap<>();
 
-        //Setting all the chars in the hashmap
         for (int i = 0; i < charArray.length; i++) {
-            containedLetters.put(charArray[i], null);
-        }
-
-        for (int i = 0; i < charArray.length; i++) {
-
+            containedLetters.putIfAbsent(charArray[i], i);
         }
 
 
