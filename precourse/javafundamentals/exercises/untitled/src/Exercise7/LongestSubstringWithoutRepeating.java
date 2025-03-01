@@ -20,9 +20,11 @@ An integer representing the length of the longest substring without repeating ch
 
 Example:
 
-System.out.println(lengthOfLongestSubstring("bbbbb")); // Expected Output: 1
+
 
 System.out.println(lengthOfLongestSubstring("abcabcbb")); // Expected Output: 3
+
+System.out.println(lengthOfLongestSubstring("bbbbb")); // Expected Output: 1
 
 System.out.println(lengthOfLongestSubstring("pwwkew")); // Expected Output: 3
 
@@ -33,11 +35,11 @@ import java.util.HashMap;
 public class LongestSubstringWithoutRepeating {
     public static void main(String[] args) {
 
-        System.out.println(lengthOfLongestSubstring("pwwkew"));
+        System.out.println(lengthOfLongestSubstring("abcabcbb"));
 
         System.out.println(lengthOfLongestSubstring("bbbbb"));
-
-        System.out.println(lengthOfLongestSubstring("abcabcbb"));
+        
+        System.out.println(lengthOfLongestSubstring("pwwkew"));
 
 
     }
@@ -51,7 +53,19 @@ public class LongestSubstringWithoutRepeating {
         HashMap<Character, Integer> containedLetters = new HashMap<>();
 
         for (int i = 0; i < charArray.length; i++) {
-            containedLetters.putIfAbsent(charArray[i], i);
+
+            //If the char is already in the hashmap
+            if (containedLetters.containsKey(charArray[i])) {
+                changingCounter = 1;
+                containedLetters.replace(charArray[i], i);
+            } else {
+                containedLetters.putIfAbsent(charArray[i], i);
+                changingCounter++;
+            }
+            if (changingCounter > maxDifferent) {
+                maxDifferent = changingCounter;
+            }
+
         }
 
 
