@@ -32,6 +32,7 @@ public class LongestSubstringWithoutRepeating {
 
     public static int calculateHighestNotRepeating(String str) {
         int maxRepeating = 0;
+        char[] charArray = str.toLowerCase().toCharArray();
 
         return maxRepeating;
     }
