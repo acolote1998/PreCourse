@@ -39,17 +39,17 @@ public class LongestSubstringWithoutRepeating {
     }
 
     public static int lengthOfLongestSubstring(String str) {
-        int maxRepeating = 0;
+        int maxDifferent = 0;
         char[] charArray = str.toLowerCase().toCharArray();
 
         for (int i = 0; i < charArray.length; i++) {
-            if (maxRepeating != 0) {
+            if (maxDifferent != 0) {
                 if (charArray[(i - 1)] == charArray[i]) {
-                    maxRepeating++;
+                    maxDifferent++;
                 }
-            } else maxRepeating++;
+            } else maxDifferent++;
         }
 
-        return maxRepeating;
+        return maxDifferent;
     }
 }
