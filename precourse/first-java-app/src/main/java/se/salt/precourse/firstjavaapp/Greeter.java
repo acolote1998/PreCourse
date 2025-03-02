@@ -1,60 +1,43 @@
 package se.salt.precourse.firstjavaapp;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
-import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.time.LocalDate;
 @SpringBootApplication
 public class Greeter implements CommandLineRunner {
+@Autowired
+StartDateHandler startDateHandler;
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     SpringApplication.run(Greeter.class, args);
   }
 
   @Override
-  public void run(String... args) throws IOException {
-    System.out.print("What is your name? ");
+  public void run(String... args) throws Exception {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+    System.out.print("What is your name? ");
     String name = reader.readLine();
+    System.out.println("Welcome to SALT, " + name);
 
     System.out.print("When does the course start? ");
     String startDateInput = reader.readLine();
 
-    String greeting = greet(name);
-    System.out.println(greeting);
+    if (startDateHandler.dateHasOnlyNumbers(startDateInput)) {
+      LocalDate courseStart = startDateHandler.parseDate(startDateInput);
 
-    if (dateHasOnlyNumbers(startDateInput)) {
-      LocalDate courseStart = LocalDate.parse(startDateInput);
-      String calculatingDaysLeft = calculateDate(courseStart);
-      System.out.println(calculatingDaysLeft);
+      DateCalculator calculator = new DateCalculator();
+      String daysLeftMessage = calculator.calculateDate(courseStart);
+
+      System.out.println(daysLeftMessage);
     } else {
-      System.out.println("Please provide a valid date");
+      System.out.println("Please provide a valid date.");
     }
-  }
-
-  private static String greet(String namePassedIn) {
-    return "Welcome to SALT, " + namePassedIn;
-  }
-
-  private static String calculateDate(LocalDate courseStartDate) {
-    LocalDate actualDate = LocalDate.now();
-    long daysLeft = ChronoUnit.DAYS.between(actualDate, courseStartDate);
-    return "There are " + daysLeft + " days left until the course starts.";
-  }
-
-  private static boolean dateHasOnlyNumbers(String startDateInput) {
-    String[] dateParts = startDateInput.split("-");
-    for (String datePart : dateParts) {
-      if (!StringUtils.isNumeric(datePart)) {
-        return false;
-      }
-    }
-    return true;
   }
 }
