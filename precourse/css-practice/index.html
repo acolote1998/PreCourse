@@ -3,18 +3,39 @@
   <head>
     <style>
       .container {
+        position: relative; /* Sistema de coordenadas para hijos */
         background-color: lightgray;
+        height: 400px;
         padding: 20px;
       }
 
       .box {
         width: 100px;
         height: 100px;
-        background-color: steelblue;
-        color: white;
         text-align: center;
         line-height: 100px;
-        margin-bottom: 10px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .box1 {
+        background-color: steelblue;
+        position: relative;
+        top: 30px;
+        left: 50px;
+      }
+
+      .box2 {
+        background-color: crimson;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .box3 {
+        background-color: orange;
+        position: sticky;
+        top: 0;
       }
     </style>
     <meta charset="UTF-8" />
@@ -34,6 +55,9 @@
       margin: 10px 20px 30px 40px;	(en el sentido del reloj) 10px arriba, 20px derecha, 30px abajo, 40px izquierda
       
       -->
+    </div>
+    <div style="height: 1000px; background-color: lightgray">
+      Contenido para scrollear...
     </div>
   </body>
 </html>
