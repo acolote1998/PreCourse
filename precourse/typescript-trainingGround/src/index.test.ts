@@ -5,7 +5,7 @@ import { greet } from "./index";
 describe("ts test", () => {
   it("get greeting", () => {
     // arrange
-    const birthYear = "1972";
+    const birthYear = 1972;
     const name = "Marcus";
 
     //act
@@ -14,6 +14,6 @@ describe("ts test", () => {
 
     //assert
 
-    assert.strictEqual(result, "Hello Marcus, you are 51 years old");
+    assert.strictEqual(result, "Hello Marcus, you are 53 years old");
   });
 });
