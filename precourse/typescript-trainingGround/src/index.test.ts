@@ -1,6 +1,6 @@
 import "mocha";
 import assert from "assert";
-import { greet, isOld } from "./index";
+import { greet, isOld, countOdd } from "./index";
 
 describe("ts test", () => {
   it("get greeting", () => {
