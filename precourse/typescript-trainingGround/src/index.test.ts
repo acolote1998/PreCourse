@@ -48,7 +48,14 @@ it("fun with variables", () => {
   assert.strictEqual(typeof name, "string");
 });
 
-it("arrays are typed in ts", () => {
-  const names: string[] = ["Marcus", "Julia", "Catherine"];
+it("count odd numbers", () => {
+  //arrange
   const firstFive = [1, 2, 3, 4, 5];
+
+  //act
+  const numberOfOdds = countOdd(firstFive);
+
+  //arrange
+
+  assert.strictEqual(numberOfOdds, 3);
 });
