@@ -47,3 +47,8 @@ it("fun with variables", () => {
   assert.strictEqual(typeof nameImplicit2, "string");
   assert.strictEqual(typeof name, "string");
 });
+
+it("arrays are typed in ts", () => {
+  const names: string[] = ["Marcus", "Julia", "Catherine"];
+  const firstFive = [1, 2, 3, 4, 5];
+});
