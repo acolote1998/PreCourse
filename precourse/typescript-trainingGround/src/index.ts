@@ -40,4 +40,6 @@ type Person = {
   address: Address;
 };
 
+function getPersonStreetNo(streetnumber: number) {}
+
 export { greet, isOld, countOdd, sumEvenNumbers, Person, Address };
