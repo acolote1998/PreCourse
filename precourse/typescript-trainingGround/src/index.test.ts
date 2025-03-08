@@ -64,9 +64,9 @@ it("sums even numbers", () => {
   //arrange
   const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   //actr
-  const sumEvenNumbers = nums.sumEvenNumbers();
+  const testsumEvenNumbers = sumEvenNumbers(nums);
 
   //arrange
 
-  assert.strictEqual(sumEvenNumbers, 30);
+  assert.strictEqual(testsumEvenNumbers, 30);
 });
