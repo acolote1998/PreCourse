@@ -40,4 +40,4 @@ type Person = {
   address: Address;
 };
 
-export { greet, isOld, countOdd, sumEvenNumbers };
+export { greet, isOld, countOdd, sumEvenNumbers, Person, Address };
