@@ -1,6 +1,6 @@
 import "mocha";
 import assert from "assert";
-import { greet, isOld, countOdd } from "./index";
+import { greet, isOld, countOdd, sumEvenNumbers } from "./index";
 
 describe("ts test", () => {
   it("get greeting", () => {
