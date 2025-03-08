@@ -77,3 +77,24 @@ it("sums even numbers", () => {
 
   assert.strictEqual(testsumEvenNumbers, 30);
 });
+
+it("gets the street number for a person", () => {
+  //arrange
+  const p: Person = {
+    name: "Marcus",
+    birthYear: 1972,
+    address: {
+      street: "Solnatest",
+      streetNo: 25,
+      city: "Stockholm",
+    },
+  };
+
+  //act
+
+  const streetN = getPersonStreetNo(p);
+
+  // assert
+
+  assert.strictEqual(streetN, 25);
+});
