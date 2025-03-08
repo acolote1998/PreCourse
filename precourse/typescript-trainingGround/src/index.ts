@@ -28,4 +28,16 @@ function sumEvenNumbers(arr: number[]) {
   return summedNumbers;
 }
 
+type Address = {
+  street: string;
+  streetNo: number;
+  city: string;
+};
+
+type Person = {
+  name: string;
+  birthYear: number;
+  address: Address;
+};
+
 export { greet, isOld, countOdd, sumEvenNumbers };
