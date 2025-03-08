@@ -59,3 +59,14 @@ it("count odd numbers", () => {
 
   assert.strictEqual(numberOfOdds, 3);
 });
+
+it("sums even numbers", () => {
+  //arrange
+  const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  //actr
+  const sumEvenNumbers = nums.sumEvenNumbers();
+
+  //arrange
+
+  assert.strictEqual(sumEvenNumbers, 30);
+});
