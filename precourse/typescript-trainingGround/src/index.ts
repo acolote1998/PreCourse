@@ -95,7 +95,8 @@ const optionallyAdd = (
   let sum = num1 + num2;
   sum += num3 ? num3 : 0;
   sum += num4 ? num4 : 0;
-  sum += num4 ? num4 : 0;
+  sum += num5 ? num5 : 0; // <- ahora está correcto
+  return sum; // <- Falta devolver el resultado
 };
 
 export {

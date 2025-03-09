@@ -155,5 +155,5 @@ it("optional parameters", () => {
 
   //assert
 
-  assert.strictEqual(sum, 3);
+  assert.strictEqual(sum, 15);
 });
