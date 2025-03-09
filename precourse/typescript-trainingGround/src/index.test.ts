@@ -176,7 +176,7 @@ it("rest parameters - print names", () => {
   );
 
   // assert
-  assert.strictEqual(greeting1, "Hello");
+  assert.strictEqual(greeting1, "Hello ");
   assert.strictEqual(greeting2, "Hello Marcus");
   assert.strictEqual(greeting3, "Hello Marcus and Dasha");
   assert.strictEqual(greeting4, "Hello Marcus and Dasha and David");

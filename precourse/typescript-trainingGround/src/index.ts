@@ -99,6 +99,10 @@ const optionallyAdd = (
   return sum; // <- Falta devolver el resultado
 };
 
+const greetPeople = (greeting: string, ...names: string[]) => {
+  return `${greeting} ${names.join(" and ").trim()}`;
+};
+
 export {
   greet,
   isOld,
@@ -113,4 +117,5 @@ export {
   getPersonNameString,
   printThis,
   optionallyAdd,
+  greetPeople,
 };
