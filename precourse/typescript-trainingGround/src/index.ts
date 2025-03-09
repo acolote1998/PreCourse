@@ -80,6 +80,10 @@ interface IPerson {
   birthYear: number;
 }
 
+function getPersonNameString(p: IPerson): string {
+  return `${p.name}, ${p.birthYear}`;
+}
+
 export {
   greet,
   isOld,
@@ -91,4 +95,5 @@ export {
   PersonClass,
   EmployeeClass,
   IPerson,
+  getPersonNameString,
 };
