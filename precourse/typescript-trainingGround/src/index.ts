@@ -6,7 +6,7 @@ function greet(name: string, birthYear: number): string {
 
 const isOld = (age: number) => age >= 35;
 
-function countOdd(arr: number[]) {
+const countOdd = (arr: number[]) => {
   let oddnumber: number = 0;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 > 0) {
@@ -14,7 +14,7 @@ function countOdd(arr: number[]) {
     }
   }
   return oddnumber;
-}
+};
 
 function sumEvenNumbers(arr: number[]) {
   let summedNumbers = 0;
