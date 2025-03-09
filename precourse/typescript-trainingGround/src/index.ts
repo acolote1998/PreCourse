@@ -76,9 +76,7 @@ interface IPerson {
   birthYear: number;
 }
 
-function getPersonNameString(p: IPerson): string {
-  return `${p.name}, ${p.birthYear}`;
-}
+const getPersonNameString = (p: IPerson): string => `${p.name}, ${p.birthYear}`;
 
 function printThis(p: Person | undefined | null) {
   if (!p) {
