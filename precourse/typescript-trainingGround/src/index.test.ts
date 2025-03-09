@@ -15,7 +15,32 @@ import {
   printThis,
   optionallyAdd,
   greetPeople,
+  addToStart,
 } from "./index";
+
+it("add to list", () => {
+  // arrange
+  const listOfPeople: IPerson[] = [{ name: "Marcus", birthYear: 1972 }];
+  const listOfAddresses: Address[] = [
+    { street: "Strålgatan", streetNo: 23, city: "Stockholm" },
+    { street: "SchraeschazschStrasse", streetNo: 2, city: "Amsterdam" },
+  ];
+
+  // act
+  const numberOfPeople = addToStart<IPerson>(listOfPeople, {
+    name: "David",
+    birthYear: 1975,
+  });
+  const numberOfAddresses = addToStart<Address>(listOfAddresses, {
+    street: "Champs Elysees",
+    streetNo: 1,
+    city: "Paris",
+  });
+
+  // assert
+  assert.strictEqual(numberOfPeople[0].name, "David");
+  assert.strictEqual(numberOfAddresses[0].city, "Paris");
+});
 
 describe("ts test", () => {
   it("get greeting", () => {
