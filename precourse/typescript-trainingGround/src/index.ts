@@ -103,6 +103,10 @@ const greetPeople = (greeting: string, ...names: string[]) => {
   return `${greeting} ${names.join(" and ").trim()}`;
 };
 
+function addToStart<T>(list: T[], itemToAdd: T): T[] {
+  return [itemToAdd, ...list];
+}
+
 export {
   greet,
   isOld,
@@ -118,4 +122,5 @@ export {
   printThis,
   optionallyAdd,
   greetPeople,
+  addToStart,
 };
