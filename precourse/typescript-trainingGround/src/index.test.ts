@@ -108,11 +108,11 @@ it("using classes", () => {
 
   //act
 
-  e.employeeId = 12345;
+  e.setEmployeeId(12345);
 
   //assert
-  assert.strictEqual(p.name, "Marcus"); // breaks with Property 'name' is private and only accessible within class 'PersonClass'
+
   assert.strictEqual(p.getName(), "Marcus");
   assert.strictEqual(e.getName(), "Marcus Employee");
-  assert.strictEqual(e.employeeId, 12345);
+  assert.strictEqual(e.getEmployeeId(), 12345);
 });
