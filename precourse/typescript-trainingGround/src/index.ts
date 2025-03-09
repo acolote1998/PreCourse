@@ -91,7 +91,18 @@ const optionallyAdd = (
   num3?: number,
   num4?: number,
   num5?: number
-) => num1 + num2;
+) => {
+  let sum = num1 + num2;
+  if (num3 != undefined) {
+    sum += num3;
+  }
+  if (num4 != undefined) {
+    sum += num4;
+  }
+  if (num4 != undefined) {
+    sum += num4;
+  }
+};
 
 export {
   greet,
