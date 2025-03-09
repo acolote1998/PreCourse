@@ -88,6 +88,7 @@ function printThis(p: Person | undefined | null) {
   if (!p) {
     return "no person supplied";
   }
+  return p.name;
 }
 
 export {
