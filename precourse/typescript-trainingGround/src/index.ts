@@ -40,6 +40,8 @@ type Person = {
   address: Address;
 };
 
-function getPersonStreetNo(person: Person) {}
+function getPersonStreetNo(person: Person) {
+  return person.address.streetNo;
+}
 
 export { greet, isOld, countOdd, sumEvenNumbers, Person, Address };
