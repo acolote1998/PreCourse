@@ -44,4 +44,12 @@ function getPersonStreetNo(person: Person) {
   return person.address.streetNo;
 }
 
-export { greet, isOld, countOdd, sumEvenNumbers, Person, Address };
+export {
+  greet,
+  isOld,
+  countOdd,
+  sumEvenNumbers,
+  Person,
+  Address,
+  getPersonStreetNo,
+};

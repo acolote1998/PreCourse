@@ -7,6 +7,7 @@ import {
   sumEvenNumbers,
   Person,
   Address,
+  getPersonStreetNo,
 } from "./index";
 
 describe("ts test", () => {
