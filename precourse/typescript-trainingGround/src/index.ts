@@ -85,6 +85,14 @@ const printThis = (p: Person | undefined | null) => {
   return p.name;
 };
 
+const optionallyAdd = (
+  num1: number,
+  num2: number,
+  num3: number,
+  num4: number,
+  num5: number
+) => num1 + num2;
+
 export {
   greet,
   isOld,
@@ -98,4 +106,5 @@ export {
   IPerson,
   getPersonNameString,
   printThis,
+  optionallyAdd,
 };
