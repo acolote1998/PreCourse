@@ -38,9 +38,7 @@ type Person = {
   address: Address;
 };
 
-function getPersonStreetNo(person: Person) {
-  return person.address.streetNo;
-}
+const getPersonStreetNo = (person: Person) => person.address.streetNo;
 
 class PersonClass {
   private name: string = "";
