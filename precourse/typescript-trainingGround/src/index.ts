@@ -44,6 +44,17 @@ function getPersonStreetNo(person: Person) {
   return person.address.streetNo;
 }
 
+class PersonClass {
+  name: string = "";
+
+  birthYear: number = 0;
+
+  constructor(name: string, brithYear: number) {
+    this.name = name;
+    this.birthYear = this.birthYear;
+  }
+}
+
 export {
   greet,
   isOld,
