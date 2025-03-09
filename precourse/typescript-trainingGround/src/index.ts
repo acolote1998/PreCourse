@@ -79,4 +79,6 @@ export {
   Person,
   Address,
   getPersonStreetNo,
+  PersonClass,
+  EmployeeClass,
 };

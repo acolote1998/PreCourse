@@ -8,6 +8,8 @@ import {
   Person,
   Address,
   getPersonStreetNo,
+  PersonClass,
+  EmployeeClass,
 } from "./index";
 
 describe("ts test", () => {
