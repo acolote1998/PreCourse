@@ -75,6 +75,11 @@ class EmployeeClass extends PersonClass {
   }
 }
 
+interface IPerson {
+  name: string;
+  birthYear: number;
+}
+
 export {
   greet,
   isOld,
@@ -85,4 +90,5 @@ export {
   getPersonStreetNo,
   PersonClass,
   EmployeeClass,
+  IPerson,
 };
