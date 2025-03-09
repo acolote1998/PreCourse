@@ -69,6 +69,10 @@ class EmployeeClass extends PersonClass {
   public getEmployeeId() {
     return this.employeeId;
   }
+
+  public setEmployeeId(id: number) {
+    this.employeeId = id;
+  }
 }
 
 export {
