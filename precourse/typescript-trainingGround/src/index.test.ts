@@ -10,6 +10,8 @@ import {
   getPersonStreetNo,
   PersonClass,
   EmployeeClass,
+  IPerson,
+  getPersonNameString,
 } from "./index";
 
 describe("ts test", () => {
@@ -115,4 +117,20 @@ it("using classes", () => {
   assert.strictEqual(p.getName(), "Marcus");
   assert.strictEqual(e.getName(), "Marcus Employee");
   assert.strictEqual(e.getEmployeeId(), 12345);
+});
+
+it("prints an IPerson", () => {
+  //arrange
+  const p1: IPerson = { name: "Marcus", birthYear: 1972 };
+  const p2 = { name: "David", birthYear: 1975, drummer: true };
+
+  //act
+
+  const p1Address = getPersonNameString(p1);
+  const p2Address = getPersonNameString(p2);
+
+  //assert
+
+  assert.strictEqual(p1Address, "Marcus, 1972");
+  assert.strictEqual(p2Address, "David, 1975");
 });
