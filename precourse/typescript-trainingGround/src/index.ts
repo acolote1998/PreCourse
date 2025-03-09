@@ -16,7 +16,7 @@ const countOdd = (arr: number[]) => {
   return oddnumber;
 };
 
-function sumEvenNumbers(arr: number[]) {
+const sumEvenNumbers = (arr: number[]) => {
   let summedNumbers = 0;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 == 0) {
@@ -24,7 +24,7 @@ function sumEvenNumbers(arr: number[]) {
     }
   }
   return summedNumbers;
-}
+};
 
 type Address = {
   street: string;
