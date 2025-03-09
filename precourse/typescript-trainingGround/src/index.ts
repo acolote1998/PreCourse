@@ -45,9 +45,17 @@ function getPersonStreetNo(person: Person) {
 }
 
 class PersonClass {
-  name: string = "";
+  private name: string = "";
 
-  birthYear: number = 0;
+  private birthYear: number = 0;
+
+  public getName() {
+    return this.name;
+  }
+
+  public getBirthYear() {
+    return this.birthYear;
+  }
 
   constructor(name: string, brithYear: number) {
     this.name = name;
