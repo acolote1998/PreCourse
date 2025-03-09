@@ -63,6 +63,14 @@ class PersonClass {
   }
 }
 
+class EmployeeClass extends PersonClass {
+  private employeeId: number = -1;
+
+  public getEmployeeId() {
+    return this.employeeId;
+  }
+}
+
 export {
   greet,
   isOld,
