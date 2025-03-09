@@ -78,12 +78,12 @@ interface IPerson {
 
 const getPersonNameString = (p: IPerson): string => `${p.name}, ${p.birthYear}`;
 
-function printThis(p: Person | undefined | null) {
+const printThis = (p: Person | undefined | null) => {
   if (!p) {
     return "no person supplied";
   }
   return p.name;
-}
+};
 
 export {
   greet,
