@@ -99,3 +99,18 @@ it("gets the street number for a person", () => {
 
   assert.strictEqual(streetN, 25);
 });
+
+it("using classes", () => {
+  const p = new PersonClass("Marcus", 1972);
+  const e = new EmployeeClass("Marcus Employee", 1972);
+
+  //act
+
+  e.employeeId = 12345;
+
+  //assert
+  assert.strictEqual(p.name, "Marcus"); // breaks with Property 'name' is private and only accessible within class 'PersonClass'
+  assert.strictEqual(p.getName(), "Marcus");
+  assert.strictEqual(e.getName(), "Marcus Employee");
+  assert.strictEqual(e.employeeId, 12345);
+});
