@@ -13,6 +13,7 @@ import {
   IPerson,
   getPersonNameString,
   printThis,
+  optionallyAdd,
 } from "./index";
 
 describe("ts test", () => {
@@ -145,4 +146,14 @@ it("uses union types to allow nul", () => {
 
   assert.strictEqual(result1, "no person supplied");
   assert.strictEqual(result2, "no person supplied");
+});
+
+it("optional parameters", () => {
+  //act
+
+  const sum = optionallyAdd(1, 2, 3, 4, 5);
+
+  //assert
+
+  assert.strictEqual(sum, 3);
 });
