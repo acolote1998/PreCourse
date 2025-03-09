@@ -93,15 +93,9 @@ const optionallyAdd = (
   num5?: number
 ) => {
   let sum = num1 + num2;
-  if (num3 != undefined) {
-    sum += num3;
-  }
-  if (num4 != undefined) {
-    sum += num4;
-  }
-  if (num4 != undefined) {
-    sum += num4;
-  }
+  sum += num3 ? num3 : 0;
+  sum += num4 ? num4 : 0;
+  sum += num4 ? num4 : 0;
 };
 
 export {
