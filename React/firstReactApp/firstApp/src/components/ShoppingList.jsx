@@ -1,12 +1,17 @@
 const products = [
-  { title: "Cabbage", id: 1 },
-  { title: "Tomato", id: 2 },
-  { title: "Cheese", id: 3 },
+  { title: "Cabbage", isFruit: false, id: 1 },
+  { title: "Tomato", isFruit: true, id: 2 },
+  { title: "Cheese", isFruit: false, id: 3 },
 ];
 
 export default function ShoppingList() {
   const listItems = products.map((product) => (
-    <li key={product.id}>{product.title}</li>
+    <li
+      key={product.id}
+      style={{ color: product.isFruit ? "magenta" : "darkgreen" }}
+    >
+      {product.title}
+    </li>
   ));
 
   return <ul>{listItems}</ul>;
