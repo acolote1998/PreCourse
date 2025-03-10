@@ -1,12 +1,9 @@
 function MyButton() {
-  const name = prompt("What is your name?");
-  let content;
-  if (name == "aki") {
-    content = "You are the best";
-  } else {
-    content = "Uhm... hi...";
+  function handleClick() {
+    alert("You clicked me!");
   }
-  return <h1>{content}</h1>;
+
+  return <button onClick={handleClick}>Click me</button>;
 }
 
 export default MyButton;
