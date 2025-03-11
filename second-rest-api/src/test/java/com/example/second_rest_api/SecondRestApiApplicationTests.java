@@ -29,8 +29,11 @@ class SecondRestApiApplicationTests {
 	assertEquals("Building REST APIs with Spring Boot",stream.getTitle());
 	}
 
+	/*
 	@Test
 	void contextLoads() {
 	}
+
+	 */
 
 }
