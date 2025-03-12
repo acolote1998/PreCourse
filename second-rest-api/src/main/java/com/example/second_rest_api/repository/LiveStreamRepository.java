@@ -22,7 +22,7 @@ public List<LiveStream> findAll(){
 }
 
 public LiveStream findById(String id){
-    return streams.stream().filter(stream -> stream.id().equals(id)).findFirst().orElse(null)
+    return streams.stream().filter(stream -> stream.id().equals(id)).findFirst().orElse(null);
 }
 
 public LiveStream create(LiveStream stream){
@@ -40,7 +40,7 @@ public void update(LiveStream stream, String id){
 }
 
 public void delete(String id){
-    streams.removeIf(stream -> stream.id.equals(id));
+    streams.removeIf(stream -> stream.id().equals(id));
 }
 
 
