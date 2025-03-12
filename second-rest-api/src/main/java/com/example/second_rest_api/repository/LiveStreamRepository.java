@@ -16,7 +16,9 @@ List<LiveStream> streams = new ArrayList<>();
 
 public LiveStreamRepository(){
     streams.add(new LiveStream(
-            UUID.randomUUID().toString(),"Building REST APIs with Spring Boot","Description test","https://www.twitch.tv/danvega", LocalDateTime.of(2022,2,16,11,0),LocalDateTime.of(2022,2,16,12,0)
+            UUID.randomUUID().toString(),"Building REST APIs with Spring Boot","""
+         Desc Test
+         ""","https://www.twitch.tv/danvega", LocalDateTime.of(2022,2,16,11,0),LocalDateTime.of(2022,2,16,12,0)
     ));
 }
 
