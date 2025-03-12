@@ -2,6 +2,7 @@ package com.example.second_rest_api.controller;
 
 import com.example.second_rest_api.model.LiveStream;
 import com.example.second_rest_api.repository.LiveStreamRepository;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,7 +36,7 @@ public class LiveStreamController {
     // POST http://localhost:8080/streams
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
-    public LiveStream create (@RequestBody LiveStream stream){
+    public LiveStream create (@Valid @RequestBody LiveStream stream){
         return repository.create(stream);
     }
 
