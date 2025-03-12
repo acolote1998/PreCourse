@@ -1,12 +1,15 @@
 package com.example.second_rest_api.repository;
 
 import com.example.second_rest_api.model.LiveStream;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+@Repository
 public class LiveStreamRepository {
 
 List<LiveStream> streams = new ArrayList<>();
